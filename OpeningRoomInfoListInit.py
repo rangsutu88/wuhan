@@ -84,7 +84,7 @@ def change_page(driver):
     pages=driver.find_element_by_xpath("//div[@class='pagination-info']").text
     print(pages)
 
-    for i in range(12,int(page)+1):
+    for i in range(1,int(page)+1):
         print('正在爬取第{}页数据'.format(i))
         driver.find_element_by_xpath('//div[@class="datagrid-pager pagination"]/table/tbody/tr/td[7]/input').clear()
         driver.find_element_by_xpath('//div[@class="datagrid-pager pagination"]/table/tbody/tr/td[7]/input').send_keys(i,Keys.ENTER)

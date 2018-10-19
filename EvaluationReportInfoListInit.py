@@ -83,15 +83,15 @@ def change_page(url,driver):
     pages=driver.find_element_by_xpath("//div[@class='pagination-info']").text
     print(pages)
 
-    for i in range(1,int(page)+1):
+    for i in range(30,int(page)+1):
         print('正在爬取第{}页数据'.format(i))
         driver.find_element_by_xpath('//div[@class="datagrid-pager pagination"]/table/tbody/tr/td[7]/input').clear()
         driver.find_element_by_xpath('//div[@class="datagrid-pager pagination"]/table/tbody/tr/td[7]/input').send_keys(i,Keys.ENTER)
 
-        if page_all==i:
+        if int(page)==i:
             time.sleep(1)
         else:
-            WebDriverWait(driver,10).until(EC.text_to_be_present_in_element((By.XPATH,'//*[@id="datagrid-row-r1-1-9"]/td[1]/div'),str(i*10)))
+            WebDriverWait(driver,30).until(EC.text_to_be_present_in_element((By.XPATH,'//*[@id="datagrid-row-r1-1-9"]/td[1]/div'),str(i*10)))
 
         try:
             get_content(driver)
@@ -115,3 +115,4 @@ if __name__ == '__main__':
     db.close_db()
     driver.close()
     driver.quit()
+#finish_all

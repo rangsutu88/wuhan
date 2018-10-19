@@ -30,7 +30,7 @@ def get_content(driver):
         openbidrecordName_link = tr.xpath('./td[2]/div/a/@onclick')[0]
         openbidrecordName = tr.xpath('./td[2]/div/a/text()')[0]
 
-        prjName_link=MAIN_URL+re.findall(r"'.+'",openbidrecordName_link)[0].strip(r"'")
+        openbidrecordName_link=MAIN_URL+re.findall(r"'(.+)'",openbidrecordName_link)[0].split(r"','")[0]
 
         tr=tables[i+len(tables)//2]
         bidOpeningAddress = tr.xpath('./td[1]/div/text()')[0]
@@ -39,10 +39,10 @@ def get_content(driver):
         ebsFlag = tr.xpath('./td[4]/div/text()')[0]
 
         try:
-            content_two=callback_parse(prjName_link)
+            content_two=callback_parse(openbidrecordName_link)
         except:
             content_two=None
-            print('获取{}详情页失败'.format(prjName_link))
+            print('获取{}详情页失败'.format(openbidrecordName_link))
 
         content_dict['openbidrecordName_link']=openbidrecordName_link
         content_dict['openbidrecordName']=openbidrecordName
@@ -50,10 +50,10 @@ def get_content(driver):
         content_dict['bidOpeningTime']=bidOpeningTime
         content_dict['openType']=openType
         content_dict['ebsFlag']=ebsFlag
-        content_dict['content_two']=content_two
-        # db.insert_db(content_dict)
+        content_dict['content_two']='%r'%content_two
+        db.insert_db(content_dict)
 
-        print(content_dict)
+        # print(content_dict)
 
 
 
@@ -68,14 +68,14 @@ def callback_parse(url):
 
     }
 
-    req=requests.get(url,headers=headers,cookies=cookies).text
+    req=requests.get(url,headers=headers,cookies=cookies,timeout=5).text
     soup=BeautifulSoup(req,'lxml')
     content=soup.find_all('div',class_='trading_publicly_fr fr')[0]
     return content
 
 
 def change_page(url,driver):
-    time.sleep(0.5)
+    time.sleep(10)
     driver.get(url)
     page_all=driver.find_element_by_xpath('//div[@class="datagrid-pager pagination"]/table/tbody/tr/td[8]/span').text
     page=re.findall('共(\d+)页',page_all)[0]
@@ -89,6 +89,12 @@ def change_page(url,driver):
         driver.find_element_by_xpath('//div[@class="datagrid-pager pagination"]/table/tbody/tr/td[7]/input').send_keys(i,Keys.ENTER)
 
         WebDriverWait(driver,10).until(EC.text_to_be_present_in_element((By.XPATH,'//*[@id="datagrid-row-r1-1-9"]/td[1]/div'),str(i*10)))
+        if int(page)==i:
+            time.sleep(2)
+        else:
+            WebDriverWait(driver,10).until(EC.text_to_be_present_in_element((By.XPATH,'//*[@id="datagrid-row-r1-1-9"]/td[1]/div'),str(i*10)))
+
+
         try:
             get_content(driver)
         except:

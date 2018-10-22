@@ -60,10 +60,10 @@ def get_content(driver):
         content_dict['platformDataSourceName']=platformDataSourceName
         content_dict['evaluationMethodName']=evaluationMethodName
         content_dict['two_content']='%r'%content_two
-        # print(content_dict)
+        print(content_dict)
+        #
 
-
-        db.insert_db(content_dict)
+        # db.insert_db(content_dict)
 
 
 
@@ -131,11 +131,11 @@ class To_db():
 if __name__ == '__main__':
     db=To_db()
     db.create_db()
-    chrome_options = Options()
-    chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--disable-gpu')
-    driver = webdriver.Chrome(chrome_options=chrome_options)
-    # driver=webdriver.Chrome()
+    # chrome_options = Options()
+    # chrome_options.add_argument('--headless')
+    # chrome_options.add_argument('--disable-gpu')
+    # driver = webdriver.Chrome(chrome_options=chrome_options)
+    driver=webdriver.Chrome()
     driver.implicitly_wait(10)
     url = 'http://www.whzbtb.cn/V2PRTS/TendererNoticeInfoListInit.do'
     driver.get(url)

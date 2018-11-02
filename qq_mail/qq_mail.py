@@ -20,6 +20,9 @@ PW='xinjiu522590.'
 
 def login(driver,username,password):
     driver.switch_to.frame('login_frame')
+    time.sleep(2)
+    driver.find_element_by_xpath('//*[@id="switcher_plogin"]').click()
+    time.sleep(1)
     driver.find_element_by_name(name='u').clear()
     driver.find_element_by_name(name='u').send_keys(username)
     time.sleep(2)
@@ -39,14 +42,21 @@ def login(driver,username,password):
 def get_content(driver):
     driver.switch_to.frame('mainFrame')
     driver.find_element_by_xpath("//div[@class='bold unread_folderlist']/a[1]").click()
-    driver.find_element_by_xpath("//div[@id='div_showtoday']/table[1]/tbody/tr/td[3]").click()
+
+    driver.find_element_by_xpath("//div[@class='toarea']/table[1]/tbody/tr/td[3]").click()
     HTML = driver.page_source
     soup = BeautifulSoup(HTML, 'lxml')
     conent = soup.find('div', class_='readmailinfo')
     tables = conent.find_all('table', limit=3)
-    title = tables[0].find('span').get_text()
+    try:
+        title = tables[0].find('span').get_text()
+    except:
+        title=None
+
     send_bys = tables[1].find_all('span')
+
     send_by = send_bys[1].get_text()
+
     lasts = tables[2].find_all('tr', limit=2)
     send_time = lasts[0].b.get_text()
     send_to = lasts[1].get_text()
@@ -63,6 +73,17 @@ def get_content(driver):
 def change_page(driver):
     driver.find_element_by_xpath('//div[@id="nextmail_bt"]/a[2]').click()
 
+class DB():
+    def __init__(self):
+        self.db = connect(host='localhost', user='root',password='123456', port=3306)  # 2.声明一个MySQL连接对象db,在远程host传入其公网ip
+        self.cursor = self.db.cursor()  # 3.获得操作游标
+    def insert(self):
+        
+
+    def close(self):
+        self.db.close()  # 5.关闭连接
+
+
 def start():
     driver = webdriver.Chrome()
     time.sleep(1)
@@ -74,6 +95,11 @@ def start():
     time.sleep(10)
     driver.close()
     driver.quit()
+
+
+
+
+
 
 if __name__ == '__main__':
 

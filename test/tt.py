@@ -11,68 +11,50 @@ from selenium.common.exceptions import NoSuchElementException,StaleElementRefere
 from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import requests
 
-driver=webdriver.Chrome()
-
-driver.get('https://www.cdggzy.com/site/JSGC/List.aspx')
-
-locator=(By.ID,"LabelPage")
-WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
-# driver.find_element_by_xpath('//*[@id="condition"]/div[1]/div[2]/div[2]').click()
-driver.find_element_by_xpath('//*[@id="condition"]/div[1]/div[2]/div[]').click()
-time.sleep(5)
-# val=driver.find_element_by_xpath('//*[@id="LabelPage"]').text
-# locator=(By.XPATH,'//*[@id="LabelPage"][string()!="%s"]'%val)
-# WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
-# time.sleep(4)
+# def out(a):
+#     def mid(f):
+#         def inner(*args):
+#             c=args[0]
+#             print(c)
 #
-# page=driver.find_element_by_xpath('//*[@id="LabelPage"]').text.split('/')[1]
+#             print(a)
+#             print('装饰器')
 #
-# print(page)
-
-# locator=(By.XPATH,'//*[@id="contentlist"]/div[1]')
-# WebDriverWait(driver, 20).until(EC.presence_of_element_located(locator))
-
-# val = driver.find_element_by_xpath('//*[@id="linkbtnSrc"]').text
-# locator = (By.XPATH, '//*[@id="linkbtnSrc"][string()="%s"]' %val)
-
-# WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
-# print('ok')
-# text=driver.find_element_by_xpath('//*[@id="contentlist"]/div[1]').text
-# print(text)
-# text=driver.find_element_by_xpath('//*[@id="condition"]/div[1]/div[2]/div[2]').get_attribute('class')
-# print(text)
-# print(text=='option choosed')
-# url=driver.current_url
-# html=driver.page_source
-# soup=BeautifulSoup(html,'lxml')
-# tables=soup.find('div',id='contentlist')
-# table=tables.find_all('div',recursive=False)
+#             return f(*args)
+#         return inner
+#     return mid
 #
-# for i in table:
-#     a_=i.find('a')
-#     href=a_['href']
-#     title=a_.get_text()
-#     content=i.find_all('div')
+# @out(a=1)
+# def func(b=2,num=3):
+#     print('函数体')
+#     print(b)
 #
-#     address=content[0].get_text().rstrip('】').lstrip('【')
-#     data_time_ing=content[2].find_all('div')
-#     data_time=data_time_ing[0].get_text()
-#     ing=data_time_ing[1].get_text()
-#
-#     # driver.find_element_by_class_name()
-#     print(address)
-#
-#     print(data_time)
-#     print(ing)
-#     print(href)
-#     print(url)
-#     print(title)
+# func()
+
+# driver=webdriver.Chrome()
+# driver.get('https://www.baidu.com/')
 
 
-    # rindex=url.rfind('/')
-    # href=url[:rindex]+'/'+href
-    # print(href)
+def out(f):
+    def inner(*args):
+        print(args)
+        driver=args[0]
+
+        print(driver)
+        print('装饰器')
+        return f(*args)
+
+    return inner
+@out
+def fun(num=1,cnum=2):
+
+    # print(num)
+    # print(cnum)
+    print('函数体')
 
 
-driver.quit()
+
+fun(3,4)
+# driver.quit()

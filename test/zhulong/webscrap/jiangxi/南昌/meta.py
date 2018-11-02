@@ -100,37 +100,46 @@ def general_template(tb,url,col,conp):
 
 def work(conp,i=-1):
     data=[
-    ["gcjs_fangjianshizheng_zhaobiao_gg","http://ncztb.nc.gov.cn/nczbw/jyxx/002001/002001002/MoreInfo.aspx?CategoryNum=002001002",['name','ggstart_time','href']],
-    ["gcjs_fangjianshizheng_dayi_gg","http://ncztb.nc.gov.cn/nczbw/jyxx/002001/002001004/MoreInfo.aspx?CategoryNum=002001004",['name','ggstart_time','href']],
-    ["gcjs_fangjianshizheng_zhongbiaohx_gg","http://ncztb.nc.gov.cn/nczbw/jyxx/002001/002001005/MoreInfo.aspx?CategoryNum=002001005",['title','ggstart_time','href']],
+    # ["gcjs_fangjianshizheng_zhaobiao_gg","http://ncztb.nc.gov.cn/nczbw/jyxx/002001/002001002/MoreInfo.aspx?CategoryNum=002001002",['name','ggstart_time','href']],
+    # ["gcjs_fangjianshizheng_dayi_gg","http://ncztb.nc.gov.cn/nczbw/jyxx/002001/002001004/MoreInfo.aspx?CategoryNum=002001004",['name','ggstart_time','href']],
+    # ["gcjs_fangjianshizheng_zhongbiaohx_gg","http://ncztb.nc.gov.cn/nczbw/jyxx/002001/002001005/MoreInfo.aspx?CategoryNum=002001005",['title','ggstart_time','href']],
+    #
+    # ["gcjs_jiaotong_zhaobiao_gg","http://ncztb.nc.gov.cn/nczbw/jyxx/002002/002002002/MoreInfo.aspx?CategoryNum=002002002",["name", "ggstart_time", "href"]],
+    #
+    # ["gcjs_jiaotong_zhongbiao_gg","http://ncztb.nc.gov.cn/nczbw/jyxx/002002/002002005/MoreInfo.aspx?CategoryNum=002002005",["name", "ggstart_time", "href"]],
+    #
+    #     ["gcjs_shuili_zhaobiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002003/002003001/MoreInfo.aspx?CategoryNum=002003001",["name", "ggstart_time", "href"]],
+    #     ["gcjs_shuili_zhongbiaohx_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002003/002003004/MoreInfo.aspx?CategoryNum=002003004",["name", "ggstart_time", "href"]],
+    #
+    #
+    #
+    #     ["gcjs_tielu_zhaobiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002009/002009001/MoreInfo.aspx?CategoryNum=002009001",["name", "ggstart_time", "href"]],
+    #     ["gcjs_tielu_zhongbiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002009/002009004/MoreInfo.aspx?CategoryNum=002009004",["name", "ggstart_time", "href"]],
+    #
+    #
+    #
+    #     ["gcjs_zhongdian_zhaobiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002010/002010001/MoreInfo.aspx?CategoryNum=002010001",["name", "ggstart_time", "href"]],
+    #     ["gcjs_zhongdian_dayi_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002010/002010002/MoreInfo.aspx?CategoryNum=002010002",["name", "ggstart_time", "href"]],
+    #     ["gcjs_zhongdian_zhongbiaohx_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002010/002010004/MoreInfo.aspx?CategoryNum=002010004",["name", "ggstart_time", "href"]],
+    #
+    #
+    #
+    #     ["zfcg_zhaobiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002004/002004001/MoreInfo.aspx?CategoryNum=002004001",["name", "ggstart_time", "href"]],
+    #     ["zfcg_biangeng_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002004/002004002/MoreInfo.aspx?CategoryNum=002004002",["name", "ggstart_time", "href"]],
+    #     ["zfcg_dayi_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002004/002004003/MoreInfo.aspx?CategoryNum=002004003", ["name", "ggstart_time", "href"]],
+    #     ["zfcg_zhongbiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002004/002004004/MoreInfo.aspx?CategoryNum=002004004",["name", "ggstart_time", "href"]],
+    #
+    #     ["qita_zhaobiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002011/002011001/MoreInfo.aspx?CategoryNum=002011001",["name", "ggstart_time", "href"]],
+    #     ["qita_zhongbiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002011/002011002/MoreInfo.aspx?CategoryNum=002011002",["name", "ggstart_time", "href"]],
+    #     ["gcjs_jiaotong_zishenjg_gg",
+    #      "http://ncztb.nc.gov.cn/nczbw/jyxx/002002/002002004/MoreInfo.aspx?CategoryNum=002002004",
+    #      ["name", "ggstart_time", "href"]],
+    #     ["gcjs_tielu_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002009/002009002/MoreInfo.aspx?CategoryNum=002009002",
+    #      ["name", "ggstart_time", "href"]],
 
-    ["gcjs_jiaotong_zhaobiao_gg","http://ncztb.nc.gov.cn/nczbw/jyxx/002002/002002002/MoreInfo.aspx?CategoryNum=002002002",["name", "ggstart_time", "href"]],
-
-    ["gcjs_jiaotong_zhongbiao_gg","http://ncztb.nc.gov.cn/nczbw/jyxx/002002/002002005/MoreInfo.aspx?CategoryNum=002002005",["name", "ggstart_time", "href"]],
-
-        ["gcjs_shuili_zhaobiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002003/002003001/MoreInfo.aspx?CategoryNum=002003001",["name", "ggstart_time", "href"]],
-        ["gcjs_shuili_zhongbiaohx_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002003/002003004/MoreInfo.aspx?CategoryNum=002003004",["name", "ggstart_time", "href"]],
-
-
-
-        ["gcjs_tielu_zhaobiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002009/002009001/MoreInfo.aspx?CategoryNum=002009001",["name", "ggstart_time", "href"]],
-        ["gcjs_tielu_zhongbiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002009/002009004/MoreInfo.aspx?CategoryNum=002009004",["name", "ggstart_time", "href"]],
-
-
-
-        ["gcjs_zhongdian_zhaobiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002010/002010001/MoreInfo.aspx?CategoryNum=002010001",["name", "ggstart_time", "href"]],
-        ["gcjs_zhongdian_dayi_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002010/002010002/MoreInfo.aspx?CategoryNum=002010002",["name", "ggstart_time", "href"]],
-        ["gcjs_zhongdian_zhongbiaohx_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002010/002010004/MoreInfo.aspx?CategoryNum=002010004",["name", "ggstart_time", "href"]],
-
-
-
-        ["zfcg_zhaobiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002004/002004001/MoreInfo.aspx?CategoryNum=002004001",["name", "ggstart_time", "href"]],
-        ["zfcg_biangeng_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002004/002004002/MoreInfo.aspx?CategoryNum=002004002",["name", "ggstart_time", "href"]],
-        ["zfcg_dayi_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002004/002004003/MoreInfo.aspx?CategoryNum=002004003", ["name", "ggstart_time", "href"]],
-        ["zfcg_zhongbiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002004/002004004/MoreInfo.aspx?CategoryNum=002004004",["name", "ggstart_time", "href"]],
-
-        ["yycg_zhaobiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002011/002011001/MoreInfo.aspx?CategoryNum=002011001",["name", "ggstart_time", "href"]],
-        ["yycg_zhongbiao_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002011/002011002/MoreInfo.aspx?CategoryNum=002011002",["name", "ggstart_time", "href"]],
+        #以下表需在数据库中合并：zfcg_zhaobiao_gg,gcjs_jiaotong_zhaobiao_gg
+        # ["zfcg_dyxly_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002004/002004005/MoreInfo.aspx?CategoryNum=002004005",["name", "ggstart_time", "href"]],
+        # ["gcjs_jiaotong_zgys_gg", "http://ncztb.nc.gov.cn/nczbw/jyxx/002002/002002001/MoreInfo.aspx?CategoryNum=002002001",["name", "ggstart_time", "href"]],
 
     ]
     if i==-1:
@@ -140,8 +149,8 @@ def work(conp,i=-1):
     for w in data:
         general_template(w[0],w[1],w[2],conp)
 
-conp=["testor","zhulong","192.168.3.171","test","public"]
 # conp=["testor","zhulong","192.168.3.171","test","public"]
-# conp=["postgres","since2015","192.168.3.171","jiangxi","nanchang"]
+# conp=["testor","zhulong","192.168.3.171","test","public"]
+conp=["postgres","since2015","192.168.3.171","jiangxi","nanchang"]
 
 work(conp=conp)

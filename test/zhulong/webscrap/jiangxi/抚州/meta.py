@@ -165,17 +165,26 @@ def f2(driver):
 def work(conp,i=-1):
     data=[
 
-        ["gcjs_zhaobiao_gg","http://www.fzztb.gov.cn/jsgc/zbgg/index.htm",["name","ggstart_time","href"]],
-        ["gcjs_zhongbiaohx_gg","http://www.fzztb.gov.cn/jsgc/zbgs/gkzb/index.htm",["name","ggstart_time","href"]],
-        ["gcjs_liubiao_gg","http://www.fzztb.gov.cn/jsgc/lbgs/index.htm",["name","ggstart_time","href"]],
-        ["gcjs_xianjixingxi_gg","http://www.fzztb.gov.cn/jsgc/xjxx/index.htm",["name","ggstart_time","href"]],
+        # ["gcjs_zhaobiao_gg","http://www.fzztb.gov.cn/jsgc/zbgg/index.htm",["name","ggstart_time","href"]],
+        # ["gcjs_zhongbiaohx_gg","http://www.fzztb.gov.cn/jsgc/zbgs/gkzb/index.htm",["name","ggstart_time","href"]],
+        # ["gcjs_liubiao_gg","http://www.fzztb.gov.cn/jsgc/lbgs/index.htm",["name","ggstart_time","href"]],
+        # ["gcjs_xianjixingxi_gg","http://www.fzztb.gov.cn/jsgc/xjxx/index.htm",["name","ggstart_time","href"]],
+        #
+        #
+        ["zfcg_gg","http://www.fzztb.gov.cn/zfcg/zbgg/gkzb/index.htm",["name","ggstart_time","href"]],
+        # ["zfcg_xianjixingxi_gg","http://www.fzztb.gov.cn/zfcg/xjxx/index.htm",["name","ggstart_time","href"]],
+        # ["zfcg_liubiao_gg","http://www.fzztb.gov.cn/zfcg/lbgs/index.htm",["name","ggstart_time","href"]],
+        # ["zfcg_zhongbiao_gg","http://www.fzztb.gov.cn/zfcg/zbgs/index.htm",["name","ggstart_time","href"]],
 
 
-        ["zfcg_zhaobiao_gg","http://www.fzztb.gov.cn/zfcg/zbgg/gkzb/index.htm",["name","ggstart_time","href"]],
-        ["zfcg_xianjixingxi_gg","http://www.fzztb.gov.cn/zfcg/xjxx/index.htm",["name","ggstart_time","href"]],
-        ["zfcg_liubiao_gg","http://www.fzztb.gov.cn/zfcg/lbgs/index.htm",["name","ggstart_time","href"]],
-        ["zfcg_zhongbiao_gg","http://www.fzztb.gov.cn/zfcg/zbgs/index.htm",["name","ggstart_time","href"]],
+        #需要自己在数据库中合并下面的表到zfcg_gg中
+
         ["zfcg_tanpan_gg","http://www.fzztb.gov.cn/zfcg/zbgg/jzxtp/index.htm",["name","ggstart_time","href"]],
+        ["zfcg_dyxly_gg","http://www.fzztb.gov.cn/zfcg/zbgg/dyxly/index.htm",["name","ggstart_time","href"]],
+        ["zfcg_cuoshangs_gg","http://www.fzztb.gov.cn/zfcg/zbgg/jzxcs/index.htm",["name","ggstart_time","href"]],
+        ["zfcg_yqzb_gg","http://www.fzztb.gov.cn/zfcg/zbgg/yqzb/index.htm",["name","ggstart_time","href"]],
+
+        ["zfcg_xunjia_gg","http://www.fzztb.gov.cn/zfcg/zbgg/xj/index.htm",["name","ggstart_time","href"]],
 
 
     ]
@@ -185,8 +194,8 @@ def work(conp,i=-1):
         data=data[i:i+1]
     for w in data:
         general_template(w[0],w[1],w[2],conp)
-conp=["testor","zhulong","192.168.3.171","test","lch"]
+# conp=["testor","zhulong","192.168.3.171","test","lch"]
 # conp=["testor","zhulong","192.168.3.171","test","public"]
-# conp=["postgres","since2015","192.168.3.171","jiangxi","fuzhou"]
+conp=["postgres","since2015","192.168.3.171","jiangxi","fuzhou"]
 
 work(conp=conp)

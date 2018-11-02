@@ -1,3 +1,5 @@
+import time
+
 import pandas as pd
 import re
 
@@ -16,8 +18,8 @@ from  lmfscrap import web
 
 # __conp=["postgres","since2015","192.168.3.171","hunan","hengyang"]
 
-
-# url="http://ggzy.hengyang.gov.cn/jyxx/jsgc/zbgg_64796/index.html"
+#
+# url="http://gcjs.gzzbtbzx.com:88/zbgg/more_xian.asp?dq=rj&xian=%C8%F0%BD%F0&keyword=&cut=&page=1"
 # driver=webdriver.Chrome()
 # driver.minimize_window()
 # driver.get(url)
@@ -41,71 +43,148 @@ def general_template(tb,url,col,conp):
 
 
 def f1(driver,num):
-    locator=(By.XPATH,"//tr[@class='tdLine'][1]/td/a")
-    WebDriverWait(driver,10).until(EC.presence_of_element_located(locator))
+    f1_url=driver.current_url
+    if 'gcjs.gzzbtbzx.com:88' in f1_url:
+        df=f3(driver,num)
+        return df
 
+    locator = (By.XPATH, "/html/body/table[3]/tbody/tr/td[3]/table[2]/tbody/tr[1]/td[2]/a")
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
     url=driver.current_url
-    if "index.htm" in url:
-        cnum=1
-    else:
-        cnum=int(re.findall("index_([0-9]{1,}).html",url)[0])+1
-    if num!=cnum:
-        if num==1:
-            url=re.sub("index[_0-9]*.html","index.html",url)
-        else:
-            s="index_%d.html"%(num-1) if num>1 else "index.html"
-            url=re.sub("index[_0-9]*.html",s,url)
-        val=driver.find_element_by_xpath("//tr[@class='tdLine'][1]/td/a").text
+    cnum=url.rsplit('=', maxsplit=1)[1]
+    # print(cnum)
+
+    if str(num) !=cnum:
+        url = url.rsplit('=', maxsplit=1)[0] + '=' + '{}'.format(num)
+
+        val = driver.find_element_by_xpath("/html/body/table[3]/tbody/tr/td[3]/table[2]/tbody/tr[1]/td[2]/a").text
         driver.get(url)
-        locator=(By.XPATH,"//tr[@class='tdLine'][1]/td/a[not(contains(string(),'%s'))]"%val)
-        WebDriverWait(driver,10).until(EC.presence_of_element_located(locator))
+        locator = (
+        By.XPATH, "/html/body/table[3]/tbody/tr/td[3]/table[2]/tbody/tr[1]/td[2]/a[not(contains(string(),'%s'))]" % val)
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+
+    url = driver.current_url
+    mark = re.findall(r'http://www.rjggzyjyw.com/(.+)\?id=', url)[0]
 
     html = driver.page_source
     soup = BeautifulSoup(html, 'lxml')
-    trs = soup.find_all('tr', class_='tdLine')
     data = []
-    url = driver.current_url
-    rindex = url.rfind('/')
-    main_url = url[:rindex]
+    trs = soup.find_all('tr', attrs={'bgcolor': '#FFFFFF'})
     for tr in trs:
-        tds = tr.find_all('td')
-        href = tds[0].a['href'].strip('.')
-        name = tds[0].a['title']
-        ggstart_time = tds[1].get_text().strip()
 
-        if re.findall('http', href):
+        tds = tr.find_all('td')
+        if mark == 'news_xzgg.asp':
+            name = tds[1].get_text().strip()
+            href = tds[1].find_all('a')[1]
+            href = href['href']
+            # print(href)
+        else:
+            href = tds[1].a['href']
+
+            name = tds[1].a.get_text()
+
+        if 'http' in href:
             href = href
         else:
-            href = main_url + href
-        tmp = [name, ggstart_time, href]
+            href = 'http://www.rjggzyjyw.com/' + href
+        ggstart_time = tds[2].get_text()
+        click_num = tds[3].get_text()
+
+
+        tmp = [name, ggstart_time, click_num, href]
         data.append(tmp)
-    df=pd.DataFrame(data=data)
+    df = pd.DataFrame(data=data)
     return df
 
+def f3(driver,num):
+    locator = (By.XPATH, "//td[@bgcolor='#DFDFDF']/table[2]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[4]/td/a")
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+    c_url=driver.current_url
+    cnum=re.findall('page=(\d+)',c_url)[0]
+    if int(cnum) !=num:
+        url = 'http://gcjs.gzzbtbzx.com:88/zbgg/more_xian.asp?dq=rj&xian=%C8%F0%BD%F0&keyword=&cut=&page={}'.format(num)
+        val = driver.find_element_by_xpath(
+            "//td[@bgcolor='#DFDFDF']/table[2]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[4]/td/a").text
+        driver.get(url)
+        try:
+            locator = (By.XPATH,
+                       '//td[@bgcolor="#DFDFDF"]/table[2]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[4]/td/a[not(contains(string(),"%s"))]' % val)
+            WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+        except:
+            time.sleep(1)
+
+    main_url = driver.current_url
+
+    data = []
+    main_url = main_url.rsplit('/', maxsplit=1)[0]
+
+    html = driver.page_source
+    soup = BeautifulSoup(html, 'lxml')
+    content = soup.find('td', attrs={'bgcolor': '#DFDFDF'})
+    table = content.find_all('table')
+    table = table[1]
+    trss = table.find('table').find('table')
+    trs = trss.find_all('tr')
+
+    for i in range(3, len(trs), 2):
+        tr = trs[i]
+        tds = tr.find_all('td')
+        href = tds[0].a['href']
+        if 'http' in href:
+            href = href
+        else:
+            href = main_url + '/' + href
+        name = tds[0].a.get_text()
+        ggstart_time = tds[2].get_text()
+        click_num = tds[4].get_text()
+
+        tmp = [name, ggstart_time, click_num, href]
+        data.append(tmp)
+    df = pd.DataFrame(data=data)
+    return df
 
 def f2(driver):
-    locator = (By.XPATH, "//tr[@class='tdLine'][1]/td/a")
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+    f1_url = driver.current_url
+    if 'gcjs.gzzbtbzx.com:88' in f1_url:
+        total=109
+    else:
 
-    page = driver.find_element_by_xpath('//a[@class="clz1"][last()]').get_attribute('href')
-    total = re.findall(r'index_(\d+).htm', page)[0]
-    total=int(total)+1
+        locator = (By.XPATH, "/html/body/table[3]/tbody/tr/td[3]/table[2]/tbody/tr[1]/td[2]/a")
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+
+        try:
+            page = driver.find_element_by_xpath(
+                "/html/body/table[3]/tbody/tr/td[3]/table[2]/tbody/tr[31]/td/a[2]").get_attribute('href')
+            total = page.rsplit('=', maxsplit=1)[1]
+        except:
+            total=1
+    total=int(total)
+    driver.quit()
     return total
 
+
 def work(conp,i=-1):
-    data=[
+    data = [
         #
-        ["gcjs_zhaobiao_gg","http://www.ycztbw.gov.cn/zbgg/jsgc_5751/index.html",["name","ggstart_time","href"]],
-        ["zfcg_zhaobiao_zhaobiao_gg","http://www.ycztbw.gov.cn/zbgg/zfcg_5755/index.html",["name","ggstart_time","href"]],
-        ["gcjs_jiaotong_zhaobiao_gg","http://www.ycztbw.gov.cn/zbgg/gljt_5752/index.html",["name","ggstart_time","href"]],
-        ["gcjs_shuili_zhaobiao_gg","http://www.ycztbw.gov.cn/zbgg/slgc_5753/index.html",["name","ggstart_time","href"]],
-        ["gcjs_yuanlin_zhaobiao_gg","http://www.ycztbw.gov.cn/zbgg/slgc_5753/index.html",["name","ggstart_time","href"]],
-
-        ["gcjs_zhongbiaohx_gg","http://www.ycztbw.gov.cn/zbgs/jsgc_5759/index.html",["name","ggstart_time","href"]],
-        ["gcjs_shuili_zhongbiaohx_gg","http://www.ycztbw.gov.cn/zbgs/slgc_5761/index.html",["name","ggstart_time","href"]],
-        ["gcjs_yuanlin_zhongbiaohx_gg","http://www.ycztbw.gov.cn/zbgs/szyl_5762/index.html",["name","ggstart_time","href"]],
-        ["zfcg_zhongbiaohx_gg","http://www.ycztbw.gov.cn/zbgs/zfcg_5763/index.html",["name","ggstart_time","href"]],
-
+        ["gcjs_zhaobiao_gg", "http://gcjs.gzzbtbzx.com:88/zbgg/more_xian.asp?dq=rj&xian=%C8%F0%BD%F0&keyword=&cut=&page=1",
+         ["name", "ggstart_time", "click_num", "href"]],
+        # ["gcjs_zhongbiaohx_gg", "http://www.rjggzyjyw.com/more.asp?id=68&city=0&dept=%D6%D0%B1%EA%B9%AB%CA%BE&pageshow=1",
+        #  ["name", "ggstart_time", "click_num", "href"]],
+        # ["gcjs_dayibucong_gg", "http://www.rjggzyjyw.com/more.asp?id=67&city=0&dept=%B4%F0%D2%C9&pageshow=1",
+        #  ["name", "ggstart_time", "click_num", "href"]],
+        # #
+        # #
+        # ["zfcg_zhaobiao_gg", "http://www.rjggzyjyw.com/more.asp?id=57&city=0&dept=%D5%D0%B1%EA%B9%AB%B8%E6&pageshow=1",
+        #  ["name", "ggstart_time", "click_num", "href"]],
+        # ["zfcg_dayibucong_gg", "http://www.rjggzyjyw.com/more.asp?id=58&city=0&dept=%CF%EE%C4%BF%B4%F0%D2%C9&pageshow=1",
+        #  ["name", "ggstart_time", "click_num", "href"]],
+        # ["zfcg_zhongbiao_gg", "http://www.rjggzyjyw.com/more.asp?id=59&city=0&dept=%D6%D0%B1%EA%B9%AB%CA%BE&pageshow=1",
+        #  ["name", "ggstart_time", "click_num", "href"]],
+        #
+        #
+        # ["xzjy_zhaobiao_gg", "http://www.rjggzyjyw.com/news_xzgg.asp?id=49&ctid=&pageshow=1",["name", "ggstart_time", "click_num", "href"]],
+        # ["xzjy_dayibucong_gg", "http://www.rjggzyjyw.com/news_xzgg.asp?id=50&ctid=&pageshow=1",["name", "ggstart_time", "click_num", "href"]],
+        # ["xzjy_zhongbiao_gg", "http://www.rjggzyjyw.com/news_xzgg.asp?id=51&ctid=&pageshow=1",["name", "ggstart_time", "click_num", "href"]],
 
     ]
     if i==-1:
@@ -114,8 +193,8 @@ def work(conp,i=-1):
         data=data[i:i+1]
     for w in data:
         general_template(w[0],w[1],w[2],conp)
-conp=["testor","zhulong","192.168.3.171","test","lch"]
+# conp=["testor","zhulong","192.168.3.171","test","lch"]
 # conp=["testor","zhulong","192.168.3.171","test","public"]
-# conp=["postgres","since2015","192.168.3.171","jiangxi","yichun"]
+conp=["postgres","since2015","192.168.3.171","jiangxi","ruijin"]
 
 work(conp=conp)

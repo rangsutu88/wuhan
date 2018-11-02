@@ -13,7 +13,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 driver=webdriver.Chrome()
-driver.get('http://www.yingtan.gov.cn/xxgk/zdgc/zdgcztb/index.htm')
+driver.get('http://www.yingtan.gov.cn/xxgk/zdgc/zdgcztb/index_2.htm')
 
 
 locator=(By.XPATH,"//div[@class='ldjs_body']/ul/li/a")
@@ -28,21 +28,27 @@ page=driver.page_source
 soup=BeautifulSoup(page,"lxml")
 url=driver.current_url
 rindex=url.rfind('/')
-url=url[:rindex]
+url_1=url[:rindex]
+url_2=re.findall('http://www.yingtan.gov.cn/\w+?/',url)[0]
+print(url_2)
 tables=soup.find('div',class_='ldjs_body')
 lis=tables.find_all('li')
 data=[]
 for i in range(0,len(lis),2):
     # print(li)
     li=lis[i]
-    href=li.a['href']
+    href=li.a['href'].strip('.')
+    print(href)
     title=li.get_text().strip().strip('•').strip()
     li=lis[i+1]
     data_time=li.get_text().strip()
     if re.findall('http',href):
         href=href
+    elif re.findall(r'/\.\./',href):
+        href=href.split(r'/../')[1]
+        href=url_2+href
     else:
-        href=url+href
+        href=url_1+href
 
     tmp=[title,data_time,href]
     print(tmp)

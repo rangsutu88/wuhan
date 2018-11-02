@@ -100,11 +100,15 @@ def general_template(tb,url,col,conp):
 
 def work(conp,i=-1):
     data=[
-    ["gcjs_zhaobiao_gg","http://www.xyggzy.cn/ggzy/jsgc/010001/MoreInfo.aspx?CategoryNum=010001",['name','ggstart_time','href']],
-    ["gcjs_zhongbiaohx_gg","http://www.xyggzy.cn/ggzy/jsgc/010002/MoreInfo.aspx?CategoryNum=010002",['name','ggstart','href']],
+    # ["gcjs_zhaobiao_gg","http://www.xyggzy.cn/ggzy/jsgc/010001/MoreInfo.aspx?CategoryNum=010001",['name','ggstart_time','href']],
+    # ["gcjs_zhongbiaohx_gg","http://www.xyggzy.cn/ggzy/jsgc/010002/MoreInfo.aspx?CategoryNum=010002",['name','ggstart','href']],
+    #
+    #     ["zfcg_zhaobiao_gg", "http://www.xyggzy.cn/ggzy/zfcg/009001/MoreInfo.aspx?CategoryNum=009001",["name", "ggstart_time", "href"]],
+    #     ["zfcg_zhongbiaohx_gg", "http://www.xyggzy.cn/ggzy/zfcg/009002/MoreInfo.aspx?CategoryNum=009002",["name", "ggstart_time", "href"]],
 
-        ["zfcg_zhaobiao_gg", "http://www.xyggzy.cn/ggzy/zfcg/009001/MoreInfo.aspx?CategoryNum=009001",["name", "ggstart_time", "href"]],
-        ["zfcg_zhongbiaohx_gg", "http://www.xyggzy.cn/ggzy/zfcg/009002/MoreInfo.aspx?CategoryNum=009002",["name", "ggstart_time", "href"]],
+
+        # ["xzjy_zhaobiao_gg", "http://www.xyggzy.cn/ggzy/xzjy/016001/MoreInfo.aspx?CategoryNum=016001",["name", "ggstart_time", "href"]],
+        # ["xzjy_zhongbiaohx_gg", "http://www.xyggzy.cn/ggzy/xzjy/016002/MoreInfo.aspx?CategoryNum=016002",["name", "ggstart_time", "href"]],
 
     ]
     if i==-1:

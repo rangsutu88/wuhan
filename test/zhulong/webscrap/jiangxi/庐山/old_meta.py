@@ -92,11 +92,11 @@ def f2(driver):
 def work(conp,i=-1):
     data=[
         #
-        ["gcjs_zhaobiao_gg","http://www.lssggzy.gov.cn/xz/xz_type/detailClass/4-45-1",["name","ggstart_time","href"]],
-        ["gcjs_zhongbiaohx_gg","http://www.lssggzy.gov.cn/xz/xz_type/detailClass/4-48-1",["name","ggstart_time","href"]],
+        ["old_gcjs_zhaobiao_gg","http://www.lssggzy.gov.cn/xz/xz_type/detailClass/4-45-1",["name","ggstart_time","href"]],
+        ["old_gcjs_zhongbiaohx_gg","http://www.lssggzy.gov.cn/xz/xz_type/detailClass/4-48-1",["name","ggstart_time","href"]],
 
-        ["zfcg_zhaobiao_gg","http://www.lssggzy.gov.cn/xz/xz_type/detailClass/4-49-1",["name","ggstart_time","href"]],
-        ["zfcg_zhongbiao_gg","http://www.lssggzy.gov.cn/xz/xz_type/detailClass/4-52-1",["name","ggstart_time","href"]],
+        ["old_zfcg_zhaobiao_gg","http://www.lssggzy.gov.cn/xz/xz_type/detailClass/4-49-1",["name","ggstart_time","href"]],
+        ["old_zfcg_zhongbiao_gg","http://www.lssggzy.gov.cn/xz/xz_type/detailClass/4-52-1",["name","ggstart_time","href"]],
 
 
     ]

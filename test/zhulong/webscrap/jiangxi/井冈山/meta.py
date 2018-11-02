@@ -123,7 +123,7 @@ def general_template(tb,url,col,conp):
     "tb":tb,
     "col":col,
     "conp":conp,
-    "num":10,
+    "num":1,
     # 'total':10
 
 
@@ -134,9 +134,11 @@ def general_template(tb,url,col,conp):
 
 def work(conp,i=-1):
     data=[
-    # ["gcjs_zhaobiao_gg","http://jgszb.jgs.gov.cn/html/jsgcgg/index.html",['name','ggstart_time','href']],
+    # ["gcjs_gg","http://jgszb.jgs.gov.cn/html/jsgcgg/index.html",['name','ggstart_time','href']],
 
-    ["zfcg_zhaobiao_gg", "http://jgszb.jgs.gov.cn/html/zfcggg/index.html",["name", "ggstart_time", "href"]],
+    # ["zfcg_gg", "http://jgszb.jgs.gov.cn/html/zfcggg/index.html",["name", "ggstart_time", "href"]],
+
+    ["qita_gg", "http://jgszb.jgs.gov.cn/html/xeyxgcgg/index.html",["name", "ggstart_time", "href"]],
 
     # ["zhongbiao_gg", "http://jgszb.jgs.gov.cn/html/jgs-zbgs/index.html",["name", "ggstart_time", "href"]],
 

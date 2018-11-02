@@ -13,59 +13,40 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 driver=webdriver.Chrome()
-driver.get('http://www.lssggzy.gov.cn/xz/xz_type/detailClass/4-45-1')
+driver.maximize_window()
+driver.get('http://www.lushan.gov.cn/public/column/4443193?type=4&catId=5336732&action=list')
 
-locator=(By.XPATH,'//*[@id="main"]/div[1]/ul/li[1]/a')
+locator=(By.XPATH,"//div[@class='xxgk_navli'][1]/ul/li[3]/a")
 WebDriverWait(driver,10).until(EC.presence_of_element_located(locator))
-# time.sleep(1)
-url=driver.current_url
 
-print(url)
-url=url.rsplit('-',maxsplit=1)[0]+'-'+str(2)
-print(url)
-val=driver.find_element_by_xpath('//*[@id="main"]/div[1]/ul/li[1]/a').text
-# driver.execute_script("javascript:__doPostBack('MoreInfoList1$Pager','2')")
-# time.sleep(2)
-driver.get(url)
+num=2
+val=driver.find_element_by_xpath("//div[@class='xxgk_navli'][1]/ul/li[3]/a").text
 
-locator = (By.XPATH, "//*[@id='main']/div[1]/ul/li[1]/a[not(contains(string(),'%s'))]"%val)
+cpage=driver.find_element_by_xpath('//*[@id="page_public_info"]/span[4]/input')
+cpage.clear()
+cpage.send_keys(num,Keys.ENTER)
+
+
+locator = (By.XPATH, "//div[@class='xxgk_navli'][1]/ul/li[3]/a[not(contains(string(),'%s'))]"%val)
 WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
 #
-# page=driver.find_element_by_xpath('//a[@class="clz1"][last()]').get_attribute('href')
-# total=re.findall(r'index_(\d+).htm',page)[0]
-# print(total)
-# print(page)
+total=driver.find_element_by_xpath('//*[@id="page_public_info"]/a[last()]').get_attribute('paged')
+print(total)
 
 html = driver.page_source
 soup = BeautifulSoup(html, 'lxml')
-uls = soup.find('ul', class_='list')
-data=[]
-url=driver.current_url
-rindex = url.rfind('/')
-main_url = url[:rindex]
-lis=uls.find_all('li')
-
-for li in lis:
-    href = li.a['href']
-    href='http://www.lssggzy.gov.cn'+href
-    name=li.a.get_text().strip()
-    ggstart_time=li.span.get_text()
-
-    tmp = [name, ggstart_time,href]
+divs=soup.find_all('div',class_='xxgk_navli')
+for div in divs:
+    lis=div.find_all('li')
+    index=lis[1].get_text()
+    href=lis[2].a['href']
+    name=lis[2].a.get_text()
+    ggstart_time=lis[3].get_text()
+    tmp=[index,name,ggstart_time,href]
     print(tmp)
 
-# html=driver.page_source
-# soup=BeautifulSoup(html,'lxml')
-# table=soup.find('table',id='MoreInfoList1_DataGrid1')
-# trs=table.find_all('tr')
-# for tr in trs:
-#     tds=tr.find_all('td')
-#     href=tds[1].a['href']
-#     href='http://www.gasggzy.com'+href
-#     title=tds[1].a['title']
-#     date_time=tds[2].get_text().strip()
-#     tmp=[title,date_time,href]
-#     print(href,title,date_time)
+
+
 
 
 driver.quit()

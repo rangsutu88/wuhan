@@ -1,3 +1,5 @@
+import time
+
 import pandas as pd
 import re
 
@@ -32,7 +34,7 @@ def general_template(tb,url,col,conp):
     "col":col,
     "conp":conp,
     "num":10,
-    # 'total':5
+    # 'total':2
 
 
     }
@@ -41,25 +43,26 @@ def general_template(tb,url,col,conp):
 
 
 def f1(driver,num):
+
     locator=(By.XPATH,"//div[@class='pagingList']/ul/li/a")
     WebDriverWait(driver,10).until(EC.presence_of_element_located(locator))
+    f1_url=driver.current_url
+    mark = re.findall(r'http://www.japrtc.gov.cn/jyxx/(.+?/.+?)/', f1_url)[0]
+    # print(mark)
+    r_url=f3(mark,num)
 
-    url=driver.current_url
-    if "index.htm" in url:
-        cnum=1
-    else:
-        cnum=int(re.findall("index_([0-9]{1,}).htm",url)[0])+1
-    if num!=cnum:
-        if num==1:
-            url=re.sub("index[_0-9]*.htm","index.htm",url)
-        else:
-            s="index_%d.htm"%(num-1) if num>1 else "index.htm"
-            url=re.sub("index[_0-9]*.htm",s,url)
-        val=driver.find_element_by_xpath("//div[@class='pagingList']/ul/li/a").text
-        driver.get(url)
-        locator=(By.XPATH,"//div[@class='pagingList']/ul/li/a[not(contains(string(),'%s'))]"%val)
-        WebDriverWait(driver,10).until(EC.presence_of_element_located(locator))
 
+    # print(r_url)
+    val = driver.find_element_by_xpath("//div[@class='pagingList']/ul/li/a").text
+    driver.get(r_url)
+    try:
+        locator = (By.XPATH, "//div[@class='pagingList']/ul/li/a[not(contains(string(),'%s'))]" % val)
+        WebDriverWait(driver, 5).until(locator)
+    except:
+        time.sleep(1)
+
+
+    # print('----------------------------------------------',driver.current_url)
     html = driver.page_source
     soup = BeautifulSoup(html, 'lxml')
     trs = soup.find('div', class_='pagingList')
@@ -83,27 +86,130 @@ def f1(driver,num):
     return df
 
 
+
+
+def f3(mark,num):
+    main_url=''
+    list_=[]
+    if mark=='jsgc/zbgg':
+        # print(mark=='jsgc/zbgg')
+        main_url='http://www.japrtc.gov.cn/jyxx/jsgc/zbgg/'
+        list_=[50,13,30,34,11,8,6,30,16,30,7,34]
+    elif mark=='jsgc/zbgs':
+        main_url='http://www.japrtc.gov.cn/jyxx/jsgc/zbgs/'
+        list_=[50,7,24,25,7,7,6,12,11,23,3,34]
+    elif mark=='jsgc/dyby':
+        main_url='http://www.japrtc.gov.cn/jyxx/jsgc/dyby/'
+        list_=[50,12,5,9,3,4,5,7,5,5,3,11]
+    elif mark=='zfcg/zbgg':
+        main_url='http://www.japrtc.gov.cn/jyxx/zfcg/zbgg/'
+        list_=[50,12,48,18,24,7,7,15,4,18,6,35]
+    elif mark=='zfcg/zbgs':
+        main_url='http://www.japrtc.gov.cn/jyxx/zfcg/zbgs/'
+        list_=[50,8,13,10,12,6,6,12,4,14,5,23]
+    elif mark=='zfcg/dyby':
+        main_url='http://www.japrtc.gov.cn/jyxx/zfcg/dyby/'
+        list_=[50,3,4,4,3,2,3,4,1,4,2,5]
+
+    if num <= list_[0]:
+        if num==1:
+            url=main_url+'jas/'
+        else:
+            url=main_url+'jas/index_{}.htm'.format(num-1)
+    elif list_[0] < num <=sum(list_[:2]):
+        if num ==list_[0]+1:
+            url=main_url+'jax/'
+        else:
+            url=main_url+'jax/index_{}.htm'.format(num-1-list_[0])
+    elif sum(list_[:2]) < num <=sum(list_[:3]):
+        if num ==sum(list_[:2])+1:
+            url=main_url+'xgx/'
+        else:
+            url=main_url+'xgx/index_{}.htm'.format(num-1-sum(list_[:2]))
+    elif sum(list_[:3]) < num <= sum(list_[:4]):
+        if num ==sum(list_[:3])+1:
+            url=main_url+'yfx/'
+        else:
+            url=main_url+'yfx/index_{}.htm'.format(num-1-sum(list_[:3]))
+    elif sum(list_[:4]) < num <= sum(list_[:5]):
+        if num ==sum(list_[:4])+1:
+            url=main_url+'xjx/'
+        else:
+            url=main_url+'xjx/index_{}.htm'.format(num-1-sum(list_[:4]))
+    elif sum(list_[:5]) < num <= sum(list_[:6]):
+        if num == sum(list_[:5])+1:
+            url=main_url+'jsx/'
+        else:
+            url=main_url+'jsx/index_{}.htm'.format(num-1-sum(list_[:5]))
+
+    elif sum(list_[:6]) < num <= sum(list_[:7]):
+        if num ==sum(list_[:6])+1:
+            url=main_url+'thx/'
+        else:
+            url=main_url+'thx/index_{}.htm'.format(num-1-sum(list_[:6]))
+    elif sum(list_[:7]) < num <= sum(list_[:8]):
+        if num == sum(list_[:7])+1:
+            url=main_url+'wax/'
+        else:
+            url=main_url+'wax/index_{}.htm'.format(num-1-sum(list_[:7]))
+    elif sum(list_[:8]) < num <= sum(list_[:9]):
+        if num ==sum(list_[:8])+1:
+            url=main_url+'scx/'
+        else:
+            url=main_url+'scx/index_{}.htm'.format(num-1-sum(list_[:8]))
+    elif sum(list_[:9]) < num <= sum(list_[:10]):
+        if num ==sum(list_[:9])+1:
+            url=main_url+'afx/'
+        else:
+            url=main_url+'afx/index_{}.htm'.format(num-1-sum(list_[:9]))
+    elif sum(list_[:10]) < num <= sum(list_[:11]):
+        if num ==sum(list_[:10])+1:
+            url=main_url+'yxx/'
+        else:
+            url=main_url+'yxx/index_{}.htm'.format(num-1-sum(list_[:10]))
+    elif sum(list_[:11]) < num <= sum(list_[:12]):
+        if num ==sum(list_[:11])+1:
+            url=main_url+'jgss/'
+        else:
+            url=main_url+'jgss/index_{}.htm'.format(num-1-sum(list_[:11]))
+
+    r_url=url
+    return r_url
+
 def f2(driver):
+
     locator = (By.XPATH, "//div[@class='pagingList']/ul/li/a")
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+    total = 0
+    for i in range(1,13):
 
-    page = driver.find_element_by_xpath('//*[@id="div_page"]/a[last()]').get_attribute('href')
-    total = re.findall(r'index_(\d+).htm', page)[0]
-    total=int(total)+1
+        val = driver.find_element_by_xpath("//div[@class='pagingList']/ul/li/a").text
+        driver.find_element_by_xpath("//div[@class='pagingTitle-list']/ul/li[{num}]/a".format(num=i)).click()
+        try:
+            locator = (By.XPATH, "//div[@class='pagingList']/ul/li/a[not(contains(string(),'%s'))]" % val)
+            WebDriverWait(driver,10).until(locator)
+        except:
+            time.sleep(1)
+        try:
+            page = driver.find_element_by_xpath('//*[@id="div_page"]/a[last()]').get_attribute('href')
+            total_ = re.findall(r'index_(\d+).htm', page)[0]
+        except:
+            total_=0
+
+        total = total + int(total_) + 1
     return total
 
 def work(conp,i=-1):
     data=[
         #
-        ["gcjs_zhaobiao_gg","http://www.japrtc.gov.cn/jyxx/jsgc/zbgg/index.htm",["name","ggstart_time","href"]],
-        ["gcjs_zhongbiaohx_gg","http://www.japrtc.gov.cn/jyxx/jsgc/zbgs/index.htm",["name","ggstart_time","href"]],
-        ["gcjs_dayibucong_gg","http://www.japrtc.gov.cn/jyxx/jsgc/dyby/index.htm",["name","ggstart_time","href"]],
+        ["gcjs_zhaobiao_gg","http://www.japrtc.gov.cn/jyxx/jsgc/zbgg/",["name","ggstart_time","href"]],
+        ["gcjs_zhongbiaohx_gg","http://www.japrtc.gov.cn/jyxx/jsgc/zbgs/",["name","ggstart_time","href"]],
+        ["gcjs_dayibucong_gg","http://www.japrtc.gov.cn/jyxx/jsgc/dyby/",["name","ggstart_time","href"]],
 
 
-        ["zfcg_zhaobiao_gg","http://www.japrtc.gov.cn/jyxx/zfcg/zbgg/index.htm",["name","ggstart_time","href"]],
-        ["zfcg_dayibucong_gg","http://www.japrtc.gov.cn/jyxx/zfcg/dyby/index.htm",["name","ggstart_time","href"]],
-        ["zfcg_zhongbiao_gg","http://www.japrtc.gov.cn/jyxx/zfcg/zbgs/index.htm",["name","ggstart_time","href"]],
-
+        ["zfcg_zhaobiao_gg","http://www.japrtc.gov.cn/jyxx/zfcg/zbgg/",["name","ggstart_time","href"]],
+        ["zfcg_dayibucong_gg","http://www.japrtc.gov.cn/jyxx/zfcg/dyby/",["name","ggstart_time","href"]],
+        ["zfcg_zhongbiao_gg","http://www.japrtc.gov.cn/jyxx/zfcg/zbgs/",["name","ggstart_time","href"]],
 
     ]
     if i==-1:

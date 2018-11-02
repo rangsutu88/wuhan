@@ -16,8 +16,8 @@ from  lmfscrap import web
 
 # __conp=["postgres","since2015","192.168.3.171","hunan","hengyang"]
 
-
-# url="http://ggzy.hengyang.gov.cn/jyxx/jsgc/zbgg_64796/index.html"
+#
+# url="http://www.yingtan.gov.cn/xxgk/zdgc/zdgcztb/index.htm"
 # driver=webdriver.Chrome()
 # driver.minimize_window()
 # driver.get(url)
@@ -60,24 +60,34 @@ def f1(driver,num):
         locator=(By.XPATH,"//div[@class='ldjs_body']/ul/li/a[not(contains(string(),'%s'))]"%val)
         WebDriverWait(driver,10).until(EC.presence_of_element_located(locator))
 
-    rindex = url.rfind('/')
-    main_url = url[:rindex]
-
     page = driver.page_source
+
     soup = BeautifulSoup(page, "lxml")
+    url = driver.current_url
+    rindex = url.rfind('/')
+    url_1 = url[:rindex]
+    url_2 = re.findall('http://www.yingtan.gov.cn/\w+?/', url)[0]
+    # print(url_2)
     tables = soup.find('div', class_='ldjs_body')
     lis = tables.find_all('li')
     data = []
     for i in range(0, len(lis), 2):
+        # print(li)
         li = lis[i]
-        href = li.a['href']
+        href = li.a['href'].strip('.')
+        # print(href)
         title = li.get_text().strip().strip('•').strip()
         li = lis[i + 1]
         data_time = li.get_text().strip()
         if re.findall('http', href):
             href = href
+        elif re.findall(r'/\.\./', href):
+            href = href.split(r'/../')[1]
+            href = url_2 + href
         else:
-            href = main_url + href
+            href = url_1 + href
+
+
         tmp = [title, data_time, href]
         data.append(tmp)
     df=pd.DataFrame(data=data)

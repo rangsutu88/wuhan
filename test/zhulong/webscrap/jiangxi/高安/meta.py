@@ -90,6 +90,9 @@ def f2(driver):
     if url=='http://www.gaztbw.gov.cn/jyxx/001004/001004002/secondpageJyMk.html':
         total=1
         return total
+    if url=='http://www.gaztbw.gov.cn/jyxx/001004/001004005/secondpageJyMk.html':
+        total=1
+        return total
     locator = (By.XPATH, '//*[@id="infolist"]/li[1]/div/a')
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
     try:
@@ -114,10 +117,13 @@ def work(conp,i=-1):
         #
         # ["zfcg_zhaobiao_gg","http://www.gaztbw.gov.cn/jyxx/001004/001004001/secondpageJyMk.html",["name","ggstart_time","href"]],
         # ["zfcg_zhongbiao_gg","http://www.gaztbw.gov.cn/jyxx/001004/001004004/secondpageJyMk.html",["name","ggstart_time","href"]],
-        ["zfcg_biangeng_gg","http://www.gaztbw.gov.cn/jyxx/001004/001004002/secondpageJyMk.html",["name","ggstart_time","href"]],
+        # ["zfcg_biangeng_gg","http://www.gaztbw.gov.cn/jyxx/001004/001004002/secondpageJyMk.html",["name","ggstart_time","href"]],
 
-        ["qita_zhaobiao_gg","http://www.gaztbw.gov.cn/jyxx/001008/001008001/secondpageJyMk.html",["name","ggstart_time","href"]],
-        ["qita_zhongbiaohx_gg","http://www.gaztbw.gov.cn/jyxx/001008/001008002/secondpageJyMk.html",["name","ggstart_time","href"]],
+        # ["qita_zhaobiao_gg","http://www.gaztbw.gov.cn/jyxx/001008/001008001/secondpageJyMk.html",["name","ggstart_time","href"]],
+        # ["qita_zhongbiaohx_gg","http://www.gaztbw.gov.cn/jyxx/001008/001008002/secondpageJyMk.html",["name","ggstart_time","href"]],
+
+            #下面表需在数据库中手动合并：zfcg_zhaobiao_gg
+        # ["zfcg_dyxly_gg","http://www.gaztbw.gov.cn/jyxx/001004/001004005/secondpageJyMk.html",["name","ggstart_time","href"]],
 
 
 

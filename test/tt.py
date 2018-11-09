@@ -13,11 +13,13 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import requests
 
+
 # def out(a):
 #     def mid(f):
 #         def inner(*args):
 #             c=args[0]
 #             print(c)
+#
 #
 #             print(a)
 #             print('装饰器')
@@ -26,35 +28,55 @@ import requests
 #         return inner
 #     return mid
 #
-# @out(a=1)
-# def func(b=2,num=3):
-#     print('函数体')
-#     print(b)
 #
-# func()
+#
+#
+# def func(b):
+#     print('函数体')
+#
+#
+# mid=out(1)
+# inner=mid(func)
+# inner(2)
+
 
 # driver=webdriver.Chrome()
 # driver.get('https://www.baidu.com/')
 
 
-def out(f):
-    def inner(*args):
-        print(args)
-        driver=args[0]
+# def out(f):
+#     def inner(*args):
+#         print(args)
+#         driver=args[0]
+#
+#         print(driver)
+#         print('装饰器')
+#         return f(*args)
+#
+#     return inner
+#
+# def fun(num,cnum):
+#
+#     # print(num)
+#     # print(cnum)
+#     print('函数体')
+#     return num+cnum
+#
+# fun=out(fun)
+# a=fun(1,2)
+# print(a)
 
-        print(driver)
-        print('装饰器')
-        return f(*args)
 
-    return inner
-@out
-def fun(num=1,cnum=2):
-
-    # print(num)
-    # print(cnum)
-    print('函数体')
+# a=fun(1,2)
 
 
-
-fun(3,4)
 # driver.quit()
+
+
+def a(a):
+    print('1')
+    if a > 5:
+        return
+    print('2')
+
+a(6)

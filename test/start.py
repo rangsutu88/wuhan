@@ -1,5 +1,5 @@
 
-from zhulong.webscrap.hunan import zhuzhou
+from zhulong_.webscrap.hunan import zhuzhou
 conp=["testor","zhulong","192.168.3.171","test","public"]
 
 

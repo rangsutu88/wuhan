@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cc4fdcd2-ef02-4c79-8f41-5bcb81e08cf4" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/test$tt.coverage" NAME="tt Coverage Results" MODIFIED="1542611893108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$meta.coverage" NAME="meta Coverage Results" MODIFIED="1542964695671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/jiangxi/新余" />
+    <SUITE FILE_PATH="coverage/test$.coverage" NAME="马鞍山 Coverage Results" MODIFIED="1542847290223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/马鞍山" />
+    <SUITE FILE_PATH="coverage/test$tests.coverage" NAME="tests Coverage Results" MODIFIED="1540206422914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhulong" />
+    <SUITE FILE_PATH="coverage/test$meta__5_.coverage" NAME="meta (5) Coverage Results" MODIFIED="1542957394892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/jiangxi/抚州" />
+    <SUITE FILE_PATH="coverage/test$test_3.coverage" NAME="test_3 Coverage Results" MODIFIED="1542353957647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/吉林省/长春" />
+    <SUITE FILE_PATH="coverage/test$li.coverage" NAME="li Coverage Results" MODIFIED="1542797578092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui" />
+    <SUITE FILE_PATH="coverage/test$tttt.coverage" NAME="tttt Coverage Results" MODIFIED="1540817736432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhulong/webscrap/jiangxi/赣州" />
+    <SUITE FILE_PATH="coverage/test$test__4_.coverage" NAME="test (4) Coverage Results" MODIFIED="1541471784512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhulong/webscrap/anhui/黄山" />
+    <SUITE FILE_PATH="coverage/test$meta__1_.coverage" NAME="meta (1) Coverage Results" MODIFIED="1542967233444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/jiangxi/鹰潭" />
+    <SUITE FILE_PATH="coverage/test$__init____2_.coverage" NAME="__init__ (2) Coverage Results" MODIFIED="1542618273214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/吉林省" />
+    <SUITE FILE_PATH="coverage/test$dd.coverage" NAME="dd Coverage Results" MODIFIED="1542352781004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/黑龙江/哈尔滨" />
+    <SUITE FILE_PATH="coverage/work$test_9.coverage" NAME="test_9 Coverage Results" MODIFIED="1543047227214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap" />
+    <SUITE FILE_PATH="coverage/test$huangshan.coverage" NAME="huangshan Coverage Results" MODIFIED="1542879700598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/黄山" />
+    <SUITE FILE_PATH="coverage/test$test_9.coverage" NAME="test_9 Coverage Results" MODIFIED="1541583345457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/淮北" />
+    <SUITE FILE_PATH="coverage/test$one.coverage" NAME="one Coverage Results" MODIFIED="1539942146362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$two_mail.coverage" NAME="two_mail Coverage Results" MODIFIED="1542775127983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qq" />
+    <SUITE FILE_PATH="coverage/test$suzhou.coverage" NAME="suzhou Coverage Results" MODIFIED="1542875250732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/宿州" />
+    <SUITE FILE_PATH="coverage/test$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1542626238702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap" />
+    <SUITE FILE_PATH="coverage/test$testf3__1_.coverage" NAME="test——f3 (1) Coverage Results" MODIFIED="1541577726739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui" />
+    <SUITE FILE_PATH="coverage/test$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1542332288665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/吉林省/白城" />
+    <SUITE FILE_PATH="coverage/test$wuhu.coverage" NAME="wuhu Coverage Results" MODIFIED="1542876887183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/芜湖" />
+    <SUITE FILE_PATH="coverage/test$meta__4_.coverage" NAME="meta (4) Coverage Results" MODIFIED="1542954590481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/jiangxi/宜春" />
+    <SUITE FILE_PATH="coverage/test$a.coverage" NAME="a Coverage Results" MODIFIED="1542784723431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$start.coverage" NAME="start Coverage Results" MODIFIED="1542610821614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$tt__1_.coverage" NAME="tt (1) Coverage Results" MODIFIED="1541145530884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhulong/webscrap/jiangxi" />
+    <SUITE FILE_PATH="coverage/test$f3_1.coverage" NAME="f3_1 Coverage Results" MODIFIED="1541749742112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/铜陵" />
+    <SUITE FILE_PATH="coverage/test$tongling.coverage" NAME="tongling Coverage Results" MODIFIED="1542890832539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/anhui" />
+    <SUITE FILE_PATH="coverage/test$chuzhou.coverage" NAME="chuzhou Coverage Results" MODIFIED="1542877719479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/滁州" />
+    <SUITE FILE_PATH="coverage/test$old_meta.coverage" NAME="old_meta Coverage Results" MODIFIED="1540988215124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhulong/webscrap/jiangxi/庐山" />
+    <SUITE FILE_PATH="coverage/test$meta__3_.coverage" NAME="meta (3) Coverage Results" MODIFIED="1542964851490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/jiangxi/瑞昌" />
+    <SUITE FILE_PATH="coverage/test$suzhou__1_.coverage" NAME="suzhou (1) Coverage Results" MODIFIED="1542789435106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qq" />
+    <SUITE FILE_PATH="coverage/test$f3.coverage" NAME="f3 Coverage Results" MODIFIED="1542934587840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/黑龙江" />
+    <SUITE FILE_PATH="coverage/test$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1542275173786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/吉林省/通化" />
+    <SUITE FILE_PATH="coverage/test$new_meta.coverage" NAME="new_meta Coverage Results" MODIFIED="1540987115203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhulong/webscrap/jiangxi/庐山" />
+    <SUITE FILE_PATH="coverage/work$meta__5_.coverage" NAME="meta (5) Coverage Results" MODIFIED="1543046055764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/jiangxi/江西" />
+    <SUITE FILE_PATH="coverage/test$new.coverage" NAME="new Coverage Results" MODIFIED="1540284635930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhulong/webscrap/taizou" />
+    <SUITE FILE_PATH="coverage/test$anqing.coverage" NAME="anqing Coverage Results" MODIFIED="1542866847460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/安庆" />
+    <SUITE FILE_PATH="coverage/test$bengbu.coverage" NAME="bengbu Coverage Results" MODIFIED="1542877419170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/蚌埠" />
+    <SUITE FILE_PATH="coverage/test$test3.coverage" NAME="test——3 Coverage Results" MODIFIED="1541487440913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhulong/webscrap/anhui/巢湖" />
+    <SUITE FILE_PATH="coverage/test$test_1.coverage" NAME="test_1 Coverage Results" MODIFIED="1542702835615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qq" />
+    <SUITE FILE_PATH="coverage/test$test_2__1_.coverage" NAME="test_2 (1) Coverage Results" MODIFIED="1542262000823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/吉林省/吉林省" />
+    <SUITE FILE_PATH="coverage/test$maanshan.coverage" NAME="maanshan Coverage Results" MODIFIED="1542880629676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/马鞍山" />
+    <SUITE FILE_PATH="coverage/test$test_1__1_.coverage" NAME="test_1 (1) Coverage Results" MODIFIED="1541673420560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/宣城" />
+    <SUITE FILE_PATH="coverage/test$hefei.coverage" NAME="hefei Coverage Results" MODIFIED="1542890758270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/anhui" />
+    <SUITE FILE_PATH="coverage/test$anqing__1_.coverage" NAME="anqing (1) Coverage Results" MODIFIED="1541493381897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/安庆" />
+    <SUITE FILE_PATH="coverage/test$test.coverage" NAME="test Coverage Results" MODIFIED="1542960379472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/jiangxi/新余" />
+    <SUITE FILE_PATH="coverage/test$fuyang.coverage" NAME="fuyang Coverage Results" MODIFIED="1542879070277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/阜阳" />
+    <SUITE FILE_PATH="coverage/work$meta__4_.coverage" NAME="meta (4) Coverage Results" MODIFIED="1543045547695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/jiangxi/高安" />
+    <SUITE FILE_PATH="coverage/test$testf3.coverage" NAME="test——f3 Coverage Results" MODIFIED="1542890062888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui" />
+    <SUITE FILE_PATH="coverage/test$test__3_.coverage" NAME="test (3) Coverage Results" MODIFIED="1542182647120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/黑龙江/伊春市" />
+    <SUITE FILE_PATH="coverage/test$test_2.coverage" NAME="test_2 Coverage Results" MODIFIED="1542265512574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/吉林省/吉林市" />
+    <SUITE FILE_PATH="coverage/test$test_f3.coverage" NAME="test_f3 Coverage Results" MODIFIED="1542960467502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/jiangxi/新余" />
+    <SUITE FILE_PATH="coverage/test$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1540212309713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$test_3__1_.coverage" NAME="test_3 (1) Coverage Results" MODIFIED="1542266750626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/吉林省/吉林市" />
+    <SUITE FILE_PATH="coverage/test$meta__2_.coverage" NAME="meta (2) Coverage Results" MODIFIED="1542960833178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/jiangxi/樟树" />
+    <SUITE FILE_PATH="coverage/test$f3__1_.coverage" NAME="f3 (1) Coverage Results" MODIFIED="1541832475530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/马鞍山" />
+    <SUITE FILE_PATH="coverage/test$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1542602781313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhu/webscrap/anhui/合肥" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2056264253">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="225" />
+          <entry key="pyi" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="225" />
+          <entry key="PythonStub" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="15" />
+          <entry key="py" value="16727" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Python" value="16727" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="647593678">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="18" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.32" value="3" />
+          <entry key="project.open.time.33" value="2" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.45" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="20" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="2642" />
+          <entry key="dummy" value="160" />
+          <entry key="py" value="46591" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="160" />
+          <entry key="Python" value="49233" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="profile" value="3" />
+          <entry key="py" value="1254" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="1254" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1922251943">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="160" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="160" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="46" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="46" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/鹰潭/meta.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-30">
+              <caret line="102" column="19" lean-forward="true" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/江西/meta.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-80">
+              <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/赣州/meta.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="141" selection-start-line="141" selection-end-line="141" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/景德镇/meta.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="97" column="39" lean-forward="true" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/上饶/meta.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="111" column="30" lean-forward="true" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/高安/meta.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="151" column="19" selection-start-line="151" selection-start-column="19" selection-end-line="151" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1543050339510" expanded="true" signature="5133:5134" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zhu/webscrap/吉林省/吉林市/meta.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zhu/webscrap/吉林省/白城/meta.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zhu/webscrap/anhui/亳州/bozhou.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="290" column="10" lean-forward="true" selection-start-line="290" selection-start-column="10" selection-end-line="290" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/anhui/bozhou.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="286" lean-forward="true" selection-start-line="286" selection-end-line="303" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>db</find>
+      <find>f2</find>
+      <find>f1</find>
+      <find>tmp_q</find>
+      <find>当前页</find>
+      <find>gg</find>
+      <find>ext</find>
+      <find>ext_tb</find>
+      <find>insert_tb</find>
+      <find>html_work</find>
+      <find>information_schema</find>
+      <find>table_schema</find>
+      <find>work</find>
+      <find>write</find>
+      <find>http://www.fzztb.gov.cn/jsgc/zbgs/gkzb/index.htm</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/池州/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/淮北/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/淮南/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/滁州/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/芜湖/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/蚌埠/bengbu.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/滁州/chuzhou.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/铜陵/tongling.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/黄山/huangshan.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/马鞍山/maanshan.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/阜阳/fuyang.py" />
+        <option value="$PROJECT_DIR$/zhu/shandong/task.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/test——f3.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/anhui/安庆/anqing.py" />
+        <option value="$PROJECT_DIR$/anhui/__init__.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/黑龙江/f3.py" />
+        <option value="$PROJECT_DIR$/anhui/hefei.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/丰城/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/井冈山/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/吉安/profile" />
+        <option value="$PROJECT_DIR$/anhui/bozhou.py" />
+        <option value="$PROJECT_DIR$/anhui/chizhou.py" />
+        <option value="$PROJECT_DIR$/anhui/chuzhou.py" />
+        <option value="$PROJECT_DIR$/anhui/fuyang.py" />
+        <option value="$PROJECT_DIR$/anhui/huaibei.py" />
+        <option value="$PROJECT_DIR$/anhui/huainan.py" />
+        <option value="$PROJECT_DIR$/anhui/luan.py" />
+        <option value="$PROJECT_DIR$/anhui/maanshan.py" />
+        <option value="$PROJECT_DIR$/anhui/suzhou.py" />
+        <option value="$PROJECT_DIR$/anhui/xuancheng.py" />
+        <option value="$PROJECT_DIR$/anhui/tongling.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/庐山/new_meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/庐山/old_meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/宜春/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/吉安/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/南昌/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/抚州/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/德兴/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/景德镇/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/新余/test_f3.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/新余/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/樟树/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/瑞昌/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/瑞金/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/鹰潭/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/赣州/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/test_9.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/吉林省/吉林市/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/高安/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/江西/meta.py" />
+        <option value="$PROJECT_DIR$/zhu/webscrap/jiangxi/上饶/meta.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="960" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="anhui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="shandong" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="anhui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="anhui" type="462c0819:PsiDirectoryNode" />
+              <item name="亳州" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="jiangxi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="jiangxi" type="462c0819:PsiDirectoryNode" />
+              <item name="上饶" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="jiangxi" type="462c0819:PsiDirectoryNode" />
+              <item name="景德镇" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="jiangxi" type="462c0819:PsiDirectoryNode" />
+              <item name="江西" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="jiangxi" type="462c0819:PsiDirectoryNode" />
+              <item name="瑞金" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="jiangxi" type="462c0819:PsiDirectoryNode" />
+              <item name="赣州" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="jiangxi" type="462c0819:PsiDirectoryNode" />
+              <item name="高安" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="jiangxi" type="462c0819:PsiDirectoryNode" />
+              <item name="鹰潭" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="吉林省" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="吉林省" type="462c0819:PsiDirectoryNode" />
+              <item name="吉林市" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="吉林省" type="462c0819:PsiDirectoryNode" />
+              <item name="吉林省" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="吉林省" type="462c0819:PsiDirectoryNode" />
+              <item name="四平" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="吉林省" type="462c0819:PsiDirectoryNode" />
+              <item name="松原市" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="吉林省" type="462c0819:PsiDirectoryNode" />
+              <item name="白城" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="吉林省" type="462c0819:PsiDirectoryNode" />
+              <item name="白山市" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="吉林省" type="462c0819:PsiDirectoryNode" />
+              <item name="辽源" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="吉林省" type="462c0819:PsiDirectoryNode" />
+              <item name="通化" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="吉林省" type="462c0819:PsiDirectoryNode" />
+              <item name="长春" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="黑龙江" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="黑龙江" type="462c0819:PsiDirectoryNode" />
+              <item name="伊春市" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="黑龙江" type="462c0819:PsiDirectoryNode" />
+              <item name="哈尔滨" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="黑龙江" type="462c0819:PsiDirectoryNode" />
+              <item name="大庆市" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="黑龙江" type="462c0819:PsiDirectoryNode" />
+              <item name="鹤岗" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="黑龙江" type="462c0819:PsiDirectoryNode" />
+              <item name="黑龙江" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="zhu" type="462c0819:PsiDirectoryNode" />
+              <item name="webscrap" type="462c0819:PsiDirectoryNode" />
+              <item name="黑龙江" type="462c0819:PsiDirectoryNode" />
+              <item name="齐齐哈尔" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jacky\Desktop\project_one\test\zhu\webscrap\jiangxi\吉安" />
+      <recent name="C:\Users\jacky\Desktop\project_one\test\anhui" />
+      <recent name="C:\Users\jacky\Desktop\project_one\test\qq" />
+      <recent name="C:\Users\jacky\Desktop\project_one\test\zhu" />
+      <recent name="C:\Users\jacky\Desktop\project_one\test\zhu\webscrap\吉林省\白城" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacky\Desktop\project_one\test" />
+      <recent name="C:\Users\jacky\Desktop\test\zhulong\webscrap\sichuan\chengdu" />
+      <recent name="C:\Users\jacky\Desktop\test\zhulong\webscrap\jiangsu\nantong" />
+      <recent name="C:\Users\jacky\Desktop\test" />
+      <recent name="C:\Users\jacky\Desktop\test\zhulong\webscrap" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.test_9">
+    <configuration name="meta (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zhu/webscrap/jiangxi/鹰潭" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zhu/webscrap/jiangxi/鹰潭/meta.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="meta (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zhu/webscrap/jiangxi/瑞昌" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zhu/webscrap/jiangxi/瑞昌/meta.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="meta (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zhu/webscrap/jiangxi/高安" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zhu/webscrap/jiangxi/高安/meta.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="meta (5)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zhu/webscrap/jiangxi/江西" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zhu/webscrap/jiangxi/江西/meta.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_9" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zhu/webscrap" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zhu/webscrap/test_9.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.meta (3)" />
+      <item itemvalue="Python.meta (1)" />
+      <item itemvalue="Python.meta (4)" />
+      <item itemvalue="Python.meta (5)" />
+      <item itemvalue="Python.test_9" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test_9" />
+        <item itemvalue="Python.meta (5)" />
+        <item itemvalue="Python.meta (4)" />
+        <item itemvalue="Python.meta (1)" />
+        <item itemvalue="Python.meta (3)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc4fdcd2-ef02-4c79-8f41-5bcb81e08cf4" name="Default Changelist" comment="" />
+      <created>1539929982164</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539929982164</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1705757" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="1" weight="0.37982833" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.38626608" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info active="true" anchor="bottom" id="Find" order="7" visible="true" weight="0.32939914" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.45064378" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39914164" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.3290461" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17324094" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="1" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.15005359" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.30760986" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.3290461" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/吉安/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/宜春/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/庐山/new_meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="104" column="1" lean-forward="true" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/庐山/old_meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/德兴/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="108" column="59" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/新余/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/anhui/test——f3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="51" column="25" lean-forward="true" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/抚州/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="89" selection-start-line="89" selection-end-line="111" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/瑞昌/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="95" selection-start-line="95" selection-end-line="123" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/樟树/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="93" selection-start-line="93" selection-end-line="115" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/新余/test_f3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/新余/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="114" column="1" lean-forward="true" selection-start-line="114" selection-start-column="1" selection-end-line="114" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/瑞金/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-873">
+          <caret line="141" column="20" lean-forward="true" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/zaozhuang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3234">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/yantai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7458">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/xintai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3044">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/weihai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2442">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/weifang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3036">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/tengzhou.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2956">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462">
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/taian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6402">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/shenghui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2904">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/rushan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2912">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/rongcheng.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1650">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/rizhao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2706">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/qingdao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2508">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/pingdu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2376">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/linyi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1584">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/leling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3102">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/laiwu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1518">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/jinan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3300">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/jiaozhou.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2758">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/feicheng.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2838">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/dongying.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/binzhou.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3696">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/dezhou.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3036">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/anqiu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3960">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/python35/Lib/site-packages/zhulong/util/etl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="398" selection-start-line="398" selection-end-line="403" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/shandong/linqing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/test_9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="126" column="9" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1543047227168" expanded="true" signature="229:240" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/python35/Lib/collections/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3234">
+          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/anhui/亳州/bozhou.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="290" column="10" lean-forward="true" selection-start-line="290" selection-start-column="10" selection-end-line="290" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anhui/bozhou.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="286" lean-forward="true" selection-start-line="286" selection-end-line="303" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/吉林省/吉林市/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/吉林省/白城/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/高安/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="151" column="19" selection-start-line="151" selection-start-column="19" selection-end-line="151" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1543050339510" expanded="true" signature="5133:5134" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/鹰潭/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="102" column="19" lean-forward="true" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/江西/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/赣州/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/景德镇/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="97" column="39" lean-forward="true" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhu/webscrap/jiangxi/上饶/meta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="111" column="30" lean-forward="true" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

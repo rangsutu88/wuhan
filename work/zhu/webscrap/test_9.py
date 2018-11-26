@@ -89,6 +89,9 @@ data = get_data()
     ['gcjs_zhongbiao_gctype004_gg', 'http://ggzy.linqing.gov.cn/lqweb/jyxx/079001/079001003/079001003004', ['name', 'ggstart_time', 'href', 'info'], <function add_info.<locals>.wrap at 0x000000000A660D90>, <function f2 at 0x000000000A6606A8>], 
     ['gcjs_yucai_gctype001_gg', 'http://ggzy.linqing.gov.cn/lqweb/jyxx/079001/079001004/079001004001', ['name', 'ggstart_time', 'href', 'info'], <function add_info.<locals>.wrap at 0x000000000A660E18>, <function f2 at 0x000000000A6606A8>], 
     ['gcjs_yucai_gctype002_gg', 'http://ggzy.linqing.gov.cn/lqweb/jyxx/079001/079001004/079001004002', ['name', 'ggstart_time', 'href', 'info'], <function add_info.<locals>.wrap at 0x000000000A660EA0>, <function f2 at 0x000000000A6606A8>], 
+    
+    
+    
     ['zfcg_zhaobiao_zbfs001_gg', 'http://ggzy.linqing.gov.cn/lqweb/jyxx/079002/079002001/079002001001', ['name', 'ggstart_time', 'href', 'info'], <function add_info.<locals>.wrap at 0x000000000A6660D0>, <function f2 at 0x000000000A6606A8>], 
     ['zfcg_zhaobiao_zbfs003_gg', 'http://ggzy.linqing.gov.cn/lqweb/jyxx/079002/079002001/079002001003', ['name', 'ggstart_time', 'href', 'info'], <function add_info.<locals>.wrap at 0x000000000A6661E0>, <function f2 at 0x000000000A6606A8>], 
     ['zfcg_zhaobiao_zbfs004_gg', 'http://ggzy.linqing.gov.cn/lqweb/jyxx/079002/079002001/079002001004', ['name', 'ggstart_time', 'href', 'info'], <function add_info.<locals>.wrap at 0x000000000A666268>, <function f2 at 0x000000000A6606A8>], 
@@ -111,6 +114,9 @@ data = get_data()
     ['zfcg_yucai_zbfs002_gg', 'http://ggzy.linqing.gov.cn/lqweb/jyxx/079002/079002006/079002006002', ['name', 'ggstart_time', 'href', 'info'], <function add_info.<locals>.wrap at 0x000000000A666E18>, <function f2 at 0x000000000A6606A8>], 
     ['zfcg_yucai_zbfs005_gg', 'http://ggzy.linqing.gov.cn/lqweb/jyxx/079002/079002006/079002006005', ['name', 'ggstart_time', 'href', 'info'], <function add_info.<locals>.wrap at 0x000000000A668048>, <function f2 at 0x000000000A6606A8>], 
     ['zfcg_yucai_zbfs006_gg', 'http://ggzy.linqing.gov.cn/lqweb/jyxx/079002/079002006/079002006006', ['name', 'ggstart_time', 'href', 'info'], <function add_info.<locals>.wrap at 0x000000000A6680D0>, <function f2 at 0x000000000A6606A8>], 
+    
+    
+    
     ['yiliao_zhaobiao_gg', 'http://ggzy.linqing.gov.cn/lqweb/jyxx/079005/079005001', ['name', 'ggstart_time', 'href', 'info'], <function f1 at 0x0000000000BF7E18>, <function f2 at 0x000000000A6606A8>], 
     ['yiliao_biangeng_gg', 'http://ggzy.linqing.gov.cn/lqweb/jyxx/079005/079005002', ['name', 'ggstart_time', 'href', 'info'], <function f1 at 0x0000000000BF7E18>, <function f2 at 0x000000000A6606A8>], 
     ['yiliao_zhongbiao_gg', 'http://ggzy.linqing.gov.cn/lqweb/jyxx/079005/079005003', ['name', 'ggstart_time', 'href', 'info'], <function f1 at 0x0000000000BF7E18>, <function f2 at 0x000000000A6606A8>], 

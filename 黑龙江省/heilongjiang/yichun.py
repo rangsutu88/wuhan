@@ -89,7 +89,6 @@ def f3(driver, url):
     driver.get(url)
     url=driver.current_url
 
-
     locator = (By.XPATH, '//div[@class="content"]')
 
     WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located(locator))

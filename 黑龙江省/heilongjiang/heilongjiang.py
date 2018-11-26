@@ -69,6 +69,17 @@ def f1(driver,num):
     df["info"] = None
     return df
 
+def f2(driver):
+    locator = (By.XPATH, '//div[@class="news_inf"]/div/ul/li/a')
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+    page = driver.find_element_by_xpath('//div[@class="page"]/span[2]/b[2]').text
+
+    total = int(page)
+    driver.quit()
+
+    return total
+
+
 def f4(driver,num):
     locator = (By.XPATH, '//div[@class="yahoo"]/div[1]/span/a')
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
@@ -114,16 +125,6 @@ def f5(driver):
     driver.quit()
     return total
 
-
-def f2(driver):
-    locator = (By.XPATH, '//div[@class="news_inf"]/div/ul/li/a')
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
-    page = driver.find_element_by_xpath('//div[@class="page"]/span[2]/b[2]').text
-
-    total = int(page)
-    driver.quit()
-
-    return total
 
 
 def f3(driver, url):

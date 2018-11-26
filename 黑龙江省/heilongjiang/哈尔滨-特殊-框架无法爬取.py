@@ -125,30 +125,30 @@ def f2(driver):
 
 
 def get_cookie(driver):
-
-    mark = driver.current_url
+    mark=driver.current_url
     global COOKIES
 
-    if '42301' not in mark:
-        COOKIES = {}
-        driver.get('http://hrbggzy.org.cn/')
-        locator = (By.XPATH, '//*[@id="Map"]/area[1]')
-        WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+    COOKIES = {}
+    driver.get('http://hrbggzy.org.cn/')
+    locator = (By.XPATH, '//*[@id="Map"]/area[1]')
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
 
-        locator = (By.XPATH, '//*[@id="Map"]/area[1]')
-        WebDriverWait(driver, 10).until(EC.element_to_be_clickable(locator)).click()
-        handles = driver.window_handles
-        driver.close()
-        driver.switch_to.window(handles[1])
+    locator = (By.XPATH, '//*[@id="Map"]/area[1]')
+    WebDriverWait(driver, 10).until(EC.element_to_be_clickable(locator)).click()
+    handles = driver.window_handles
+    driver.close()
+    driver.switch_to.window(handles[1])
 
-        locator = (By.XPATH, '//div[@class="cen_new"]/div[2]/div/div[2]/a')
-        WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+    locator = (By.XPATH, '//div[@class="cen_new"]/div[2]/div/div[2]/a')
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
 
-        locator = (By.XPATH, '//div[@class="right_foot"]/div[1]/div[2]/div[4]/div[2]/a')
-        WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator)).click()
+    if '52301' in mark:
+        driver.find_element_by_xpath('//div[@class="right_foot"]/div[1]/div[2]/div[4]/div[2]/a').click()
+    else:
+        driver.find_element_by_xpath('//div[@class="cen_new"]/div[2]/div/div[2]/a').click()
 
-        locator = (By.XPATH, '//div[@class="yahoo"]/div[1]/span/a')
-        WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+    locator = (By.XPATH, '//div[@class="yahoo"]/div[1]/span/a')
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
 
 
 
@@ -158,16 +158,12 @@ def f4(driver, num):
     global COOKIES
     mark = driver.current_url
 
-    if num%20==1 or '52301' in mark:
+    if num%20==1:
         get_cookie(driver)
-
 
 
     COOKIES = driver.get_cookies()[0]
     driver.add_cookie(COOKIES)
-    url = driver.current_url
-    if '42301' in url:
-        driver.get(url)
 
     locator = (By.XPATH, '//div[@class="yahoo"]/div[1]/span/a')
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
@@ -214,9 +210,11 @@ def f5(driver):
 
     driver.get('http://hrbggzy.org.cn/')
     locator = (By.XPATH, '//*[@id="Map"]/area[1]')
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator)).click()
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+    locator = (By.XPATH, '//*[@id="Map"]/area[1]')
+    WebDriverWait(driver, 10).until(EC.element_to_be_clickable(locator)).click()
     handles = driver.window_handles
-
+    driver.close()
     driver.switch_to.window(handles[1])
 
     locator = (By.XPATH, '//div[@class="cen_new"]/div[2]/div/div[2]/a')
@@ -226,6 +224,7 @@ def f5(driver):
         driver.find_element_by_xpath('//div[@class="right_foot"]/div[1]/div[2]/div[4]/div[2]/a').click()
     else:
         driver.find_element_by_xpath('//div[@class="cen_new"]/div[2]/div/div[2]/a').click()
+
     locator = (By.XPATH, '//div[@class="yahoo"]/div[1]/span/a')
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
     page = driver.find_element_by_xpath('//div[@class="yahoo2"]/div/span/b[2]').text
@@ -237,16 +236,16 @@ def f5(driver):
     return total
 
 
-def f6(driver):
-    url = driver.current_url
-    if 'ZBMore' in url:
-        total = 1430
-
-    if 'KBMore' in url:
-        total = 1330
-
-    driver.quit()
-    return total
+# def f6(driver):
+#     url = driver.current_url
+#     if 'ZBMore' in url:
+#         total = 1430
+#
+#     if 'KBMore' in url:
+#         total = 1330
+#
+#     driver.quit()
+#     return total
 
 
 def f3(driver, url):

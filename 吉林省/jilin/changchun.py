@@ -1,4 +1,5 @@
 import time
+from os.path import join, dirname
 
 import pandas as pd
 import re
@@ -15,7 +16,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import requests
 import json
 
-from zhulong.util.etl import est_tbs,est_meta,est_html
+from zhulong.util.etl import est_tbs,est_meta,est_html, gg_existed
 
 # __conp=["postgres","since2015","192.168.3.171","hunan","changsha"]
 
@@ -73,9 +74,7 @@ def chang_page(driver,num):
 
 def f1(driver,num):
 
-    #PAGE中包含各个类型页面的总页数
 
-    # print(PAGE)
     try:
         locator = (By.XPATH, '//table[@class="ewb-table-info"]/tbody/tr[1]/td[2]/a')
         WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
@@ -84,7 +83,6 @@ def f1(driver,num):
 
     c_text = driver.find_element_by_xpath('//span[@class="ewb-screen-name current"]').text
 
-    # count_page = int(len(PAGE))
 
     for i in range(1, int(len(PAGE)) + 1):
         if sum(PAGE[:i - 1]) < num <= sum(PAGE[:i]):
@@ -305,13 +303,34 @@ data=[
 
 ]
 
+
+def get_profile():
+    path1 = join(dirname(__file__), 'profile')
+    with open(path1, 'r') as f:
+        p = f.read()
+
+    return p
+
+
+def get_conp(txt):
+    x = get_profile() + ',' + txt
+    arr = x.split(',')
+    return arr
+
+
+if gg_existed(conp=get_conp(_name_)):
+    CDC_NUM = 5
+else:
+    CDC_NUM = 10000
+
+
 def work(conp,**args):
     est_meta(conp,data=data,diqu="吉林省长春市",**args)
     est_html(conp,f=f3,**args)
 
 # CDC_NUM 为增量更新页数,设置成总页数以上(如:10000)可爬全部
 # 增量更新时,需将cdc_total设置成 None
-CDC_NUM = 1
+
 
 
 if __name__=='__main__':

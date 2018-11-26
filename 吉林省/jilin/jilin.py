@@ -26,7 +26,7 @@ from zhulong.util.etl import est_tbs,est_meta,est_html
 # driver.get(url)
 # #
 
-COOKIES = {}
+
 
 _name_='jilin'
 
@@ -53,7 +53,6 @@ def f1(driver, num):
             except:
                 driver.refresh()
                 time.sleep(1)
-                continue
             break
         if cnum < num:
             if (num - cnum) >= 5:
@@ -139,17 +138,17 @@ def f2(driver):
 
     return total
 
-
-def f4(driver):
-    url = driver.current_url
-    if 'cggg' in url:
-        total = 2498
-    if 'bggg' in url:
-        total = 467
-    if 'zbgg' in url:
-        total = 1506
-    driver.quit()
-    return total
+#
+# def f4(driver):
+#     url = driver.current_url
+#     if 'cggg' in url:
+#         total = 2498
+#     if 'bggg' in url:
+#         total = 467
+#     if 'zbgg' in url:
+#         total = 1506
+#     driver.quit()
+#     return total
 
 
 def f3(driver, url):

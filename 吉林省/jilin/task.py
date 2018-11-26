@@ -1,21 +1,13 @@
 from lmf.dbv2 import db_command
-from zhulong.anhui import anqing
-from zhulong.anhui import bengbu
-from zhulong.anhui import bozhou
-from zhulong.anhui import chaohu
-from zhulong.anhui import chizhou
-from zhulong.anhui import chuzhou
-from zhulong.anhui import fuyang
-from zhulong.anhui import hefei
-from zhulong.anhui import huaibei
-from zhulong.anhui import huainan
-from zhulong.anhui import huangshan
-from zhulong.anhui import luan
-from zhulong.anhui import maanshan
-from zhulong.anhui import suzhou
-from zhulong.anhui import tongling
-from zhulong.anhui import wuhu
-from zhulong.anhui import xuancheng
+from zhulong.jilin import baicheng
+from zhulong.jilin import baishan
+from zhulong.jilin import changchun
+from zhulong.jilin import jilin
+from zhulong.jilin import jilinshi
+from zhulong.jilin import liaoyuan
+from zhulong.jilin import siping
+from zhulong.jilin import songyuan
+from zhulong.jilin import tonghua
 
 from os.path import join, dirname
 
@@ -46,145 +38,74 @@ _conp = get_profile()
 
 
 # 1
-def task_anqing(**args):
-    conp = get_conp(anqing._name_)
-    anqing.work(conp, **args)
+def task_baicheng(**args):
+    conp = get_conp(baicheng._name_)
+    baicheng.work(conp, **args)
 
 
 # 2
-def task_bengbu(**args):
-    conp = get_conp(bengbu._name_)
-    bengbu.work(conp, **args)
+def task_baishan(**args):
+    conp = get_conp(baishan._name_)
+    baishan.work(conp, **args)
 
 
 # 3
-def task_bozhou(**args):
-    conp = get_conp(bozhou._name_)
-    bozhou.work(conp,cdc_total=None ,**args)
+def task_changchun(**args):
+    conp = get_conp(changchun._name_)
+    changchun.work(conp,cdc_total=None ,**args)
 
 
 # 4
-def task_chaohu(**args):
-    conp = get_conp(chaohu._name_)
-    chaohu.work(conp, **args)
+def task_jilin(**args):
+    conp = get_conp(jilin._name_)
+    jilin.work(conp, **args)
 
 
 # 5
-def task_chizhou(**args):
-    conp = get_conp(chizhou._name_)
-    chizhou.work(conp,cdc_total=None , **args)
-
+def task_jilinshi(**args):
+    conp = get_conp(jilinshi._name_)
+    jilinshi.work(conp,cdc_total=None , **args)
 
 # 6
-def task_chuzhou(**args):
-    conp = get_conp(chuzhou._name_)
-    chuzhou.work(conp,cdc_total=None , **args)
-
+def task_liaoyuan(**args):
+    conp = get_conp(liaoyuan._name_)
+    liaoyuan.work(conp , **args)
 
 # 7
-def task_fuyang(**args):
-    conp = get_conp(fuyang._name_)
-    fuyang.work(conp,cdc_total=None , **args)
-
+def task_siping(**args):
+    conp = get_conp(siping._name_)
+    siping.work(conp, **args)
 
 # 8
-def task_hefei(**args):
-    conp = get_conp(hefei._name_)
-    hefei.work(conp, **args)
-
+def task_songyuan(**args):
+    conp = get_conp(songyuan._name_)
+    songyuan.work(conp, **args)
 
 # 9
-def task_huaibei(**args):
-    conp = get_conp(huaibei._name_)
-    huaibei.work(conp,cdc_total=None , **args)
-
-
-# 10
-def task_huainan(**args):
-    conp = get_conp(huainan._name_)
-    huainan.work(conp,cdc_total=None , **args)
-
-
-# 11
-def task_huangshan(**args):
-    conp = get_conp(huangshan._name_)
-    huangshan.work(conp, **args)
-
-
-# 12
-def task_luan(**args):
-    conp = get_conp(luan._name_)
-    luan.work(conp, cdc_total=None ,**args)
-
-
-# 13
-def task_maanshan(**args):
-    conp = get_conp(maanshan._name_)
-    maanshan.work(conp, cdc_total=None ,**args)
-
-
-# 14
-def task_suzhou(**args):
-    conp = get_conp(suzhou._name_)
-    suzhou.work(conp,cdc_total=None , **args)
-
-
-# 15
-def task_tongling(**args):
-    conp = get_conp(tongling._name_)
-    tongling.work(conp, **args)
-
-
-# 16
-def task_wuhu(**args):
-    conp = get_conp(wuhu._name_)
-    wuhu.work(conp, **args)
-
-
-# 17
-def task_xuancheng(**args):
-    conp = get_conp(xuancheng._name_)
-    xuancheng.work(conp,cdc_total=None , **args)
-
+def task_tonghua(**args):
+    conp = get_conp(tonghua._name_)
+    tonghua.work(conp, **args)
 
 
 
 def task_all():
     bg = time.time()
     try:
-        task_anqing()
-        task_bengbu()
-        task_bozhou()
-        task_chaohu()
-        task_chizhou()
+        task_baicheng()
+        task_baishan()
+        task_changchun()
+        task_jilin()
+        task_jilinshi()
     except:
         print("part1 error!")
 
     try:
-        task_chuzhou()
-        task_fuyang()
-        task_huaibei()
-        task_huainan()
-        task_huangshan()
+        task_liaoyuan()
+        task_siping()
+        task_songyuan()
+        task_tonghua()
     except:
         print("part2 error!")
-
-    try:
-        task_luan()
-        task_maanshan()
-        task_suzhou()
-        task_tongling()
-        task_wuhu()
-    except:
-        print("part3 error!")
-
-    try:
-
-        task_xuancheng()
-        task_hefei()
-
-    except:
-        print("part4 error!")
 
 
     ed = time.time()
@@ -199,9 +120,7 @@ def task_all():
 
 def create_schemas():
     conp = get_conp('public')
-    arr = ["anqing","bengbu","bozhou","chaohu","chizhou","chuzhou","fuyang",
-           "huaibei","huainan","huangshan","luan","maanshan"
-           ,"suzhou","tongling","wuhu",'xuancheng','hefei'
+    arr = ['baicheng','baishan','changchun','jilin','jinlinshi','liaoyuan','siping','songyuan','tonghua'
            ]
     for diqu in arr:
         sql = "create schema if not exists %s" % diqu

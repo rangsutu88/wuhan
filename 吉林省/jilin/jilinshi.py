@@ -194,7 +194,24 @@ data=[
 ]
 
 
+def get_profile():
+    path1 = join(dirname(__file__), 'profile')
+    with open(path1, 'r') as f:
+        p = f.read()
 
+    return p
+
+
+def get_conp(txt):
+    x = get_profile() + ',' + txt
+    arr = x.split(',')
+    return arr
+
+
+if gg_existed(conp=get_conp(_name_)):
+    CDC_NUM = 5
+else:
+    CDC_NUM = 10000
 
 
 def work(conp,**args):
@@ -203,7 +220,7 @@ def work(conp,**args):
 
 # CDC_NUM 为增量更新页数,设置成总页数以上(如:10000)可爬全部
 # 增量更新时,需将cdc_total设置成 None
-CDC_NUM = 10
+
 
 if __name__=='__main__':
 

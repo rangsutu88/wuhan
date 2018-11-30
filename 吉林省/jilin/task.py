@@ -103,7 +103,9 @@ def task_all():
         task_liaoyuan()
         task_siping()
         task_songyuan()
-        task_tonghua()
+
+        #网站最近有问题
+        # task_tonghua()
     except:
         print("part2 error!")
 

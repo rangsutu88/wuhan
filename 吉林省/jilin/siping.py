@@ -33,7 +33,10 @@ def f1(driver,num):
     locator = (By.XPATH, '//ul[@class="wb-data-item"]/li[1]/div/a')
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
     url=driver.current_url
-    cnum = driver.find_element_by_xpath('//li[@class="ewb-page-li ewb-page-border current"]').text.strip()
+    try:
+        cnum = driver.find_element_by_xpath('//li[@class="ewb-page-li ewb-page-border current"]').text.strip()
+    except:
+        cnum='1'
 
     if cnum != str(num):
         url = url.rsplit('/', maxsplit=1)[0] + '/' + str(num) + '.html'
@@ -128,18 +131,18 @@ def f3(driver, url):
 
 
 data=[
-    # ["gcjs_zhaobiao_gg","http://ggzy.siping.gov.cn/jyxx/004001/004001001/about.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["gcjs_biangendayi_gg","http://ggzy.siping.gov.cn/jyxx/004001/004001002/about.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["gcjs_zhongbiaohx_gg","http://ggzy.siping.gov.cn/jyxx/004001/004001003/about.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["gcjs_zhongbiao_gg","http://ggzy.siping.gov.cn/jyxx/004001/004001004/about.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["gcjs_liubiao_gg","http://ggzy.siping.gov.cn/jyxx/004001/004001005/about.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_zhaobiao_gg","http://ggzy.siping.gov.cn/jyxx/004001/004001001/about.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_biangendayi_gg","http://ggzy.siping.gov.cn/jyxx/004001/004001002/about.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_zhongbiaohx_gg","http://ggzy.siping.gov.cn/jyxx/004001/004001003/about.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_zhongbiao_gg","http://ggzy.siping.gov.cn/jyxx/004001/004001004/about.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_liubiao_gg","http://ggzy.siping.gov.cn/jyxx/004001/004001005/about.html",["name","ggstart_time","href","info"],f1,f2],
 
-    # ["zfcg_zhaobiao_gg","http://ggzy.siping.gov.cn/jyxx/004002/004002001/about.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["zfcg_biangendayi_gg","http://ggzy.siping.gov.cn/jyxx/004002/004002002/about.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["zfcg_zhongbiao_gg","http://ggzy.siping.gov.cn/jyxx/004002/004002003/about.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["zfcg_liubiao_gg","http://ggzy.siping.gov.cn/jyxx/004002/004002005/about.html",["name","ggstart_time","href","info"],f1,f2],
+    ["zfcg_zhaobiao_gg","http://ggzy.siping.gov.cn/jyxx/004002/004002001/about.html",["name","ggstart_time","href","info"],f1,f2],
+    ["zfcg_biangendayi_gg","http://ggzy.siping.gov.cn/jyxx/004002/004002002/about.html",["name","ggstart_time","href","info"],f1,f2],
+    ["zfcg_zhongbiao_gg","http://ggzy.siping.gov.cn/jyxx/004002/004002003/about.html",["name","ggstart_time","href","info"],f1,f2],
+    ["zfcg_liubiao_gg","http://ggzy.siping.gov.cn/jyxx/004002/004002005/about.html",["name","ggstart_time","href","info"],f1,f2],
 
-    # ["gcjs_shuili_zhaobiao_gg","http://ggzy.siping.gov.cn/jyxx/004003/004003001/about.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_shuili_zhaobiao_gg","http://ggzy.siping.gov.cn/jyxx/004003/004003001/about.html",["name","ggstart_time","href","info"],f1,f2],
     ["gcjs_shuili_biangendayi_gg","http://ggzy.siping.gov.cn/jyxx/004003/004003002/about.html",["name","ggstart_time","href","info"],f1,f2],
     ["gcjs_shuili_zhongbiaohx_gg","http://ggzy.siping.gov.cn/jyxx/004003/004003003/about.html",["name","ggstart_time","href","info"],f1,f2],
     ["gcjs_shuili_zhongbiao_gg","http://ggzy.siping.gov.cn/jyxx/004003/004003004/about.html",["name","ggstart_time","href","info"],f1,f2],

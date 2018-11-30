@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e00eaa05-68b4-40a4-adb7-d32a5ca78999" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/yunnan$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1543483727343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ningxia" />
+    <SUITE FILE_PATH="coverage/yunnan$yuxi.coverage" NAME="yuxi Coverage Results" MODIFIED="1543453296368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yunnan$guyuan.coverage" NAME="guyuan Coverage Results" MODIFIED="1543543923705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ningxia" />
+    <SUITE FILE_PATH="coverage/yunnan$xizang.coverage" NAME="xizang Coverage Results" MODIFIED="1543560540178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xizang" />
+    <SUITE FILE_PATH="coverage/yunnan$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1543540891414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qinghai" />
+    <SUITE FILE_PATH="coverage/yunnan$yinchuan.coverage" NAME="yinchuan Coverage Results" MODIFIED="1543566164460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ningxia" />
+    <SUITE FILE_PATH="coverage/yunnan$xining.coverage" NAME="xining Coverage Results" MODIFIED="1543495328606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qinghai" />
+    <SUITE FILE_PATH="coverage/yunnan$testganzhou.coverage" NAME="testganzhou Coverage Results" MODIFIED="1543367281218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yunnan$puer.coverage" NAME="puer Coverage Results" MODIFIED="1543385556236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yunnan$zhaotong.coverage" NAME="zhaotong Coverage Results" MODIFIED="1543452647460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yunnan$test_9.coverage" NAME="test_9 Coverage Results" MODIFIED="1543375475755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../work/zhu/webscrap" />
+    <SUITE FILE_PATH="coverage/yunnan$tengchong.coverage" NAME="tengchong Coverage Results" MODIFIED="1543365698720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yunnan$chuxiong.coverage" NAME="chuxiong Coverage Results" MODIFIED="1543388788083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yunnan$kunming.coverage" NAME="kunming Coverage Results" MODIFIED="1543467323470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yunnan$ningxia.coverage" NAME="ningxia Coverage Results" MODIFIED="1543569242090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ningxia" />
+    <SUITE FILE_PATH="coverage/yunnan$baoshan.coverage" NAME="baoshan Coverage Results" MODIFIED="1543368856851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yunnan$lasa.coverage" NAME="lasa Coverage Results" MODIFIED="1543543352569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xizang" />
+    <SUITE FILE_PATH="coverage/yunnan$qinghai.coverage" NAME="qinghai Coverage Results" MODIFIED="1543576094592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qinghai" />
+    <SUITE FILE_PATH="coverage/yunnan$rikaze.coverage" NAME="rikaze Coverage Results" MODIFIED="1543546488067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xizang" />
+    <SUITE FILE_PATH="coverage/yunnan$test.coverage" NAME="test Coverage Results" MODIFIED="1543573140955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qinghai" />
+    <SUITE FILE_PATH="coverage/yunnan$test_f3.coverage" NAME="test_f3 Coverage Results" MODIFIED="1543569542483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xizang" />
+    <SUITE FILE_PATH="coverage/yunnan$lijiang.coverage" NAME="lijiang Coverage Results" MODIFIED="1543386823166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="529377911">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="profile" value="10" />
+          <entry key="py" value="147" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Python" value="147" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="6" />
+          <entry key="profile" value="26" />
+          <entry key="py" value="6296" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="Python" value="6295" />
+          <entry key="RegExp" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qinghai/xining.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1628">
+              <caret line="143" column="68" selection-start-line="143" selection-start-column="68" selection-end-line="143" selection-end-column="68" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/qinghai/qinghai.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="e#999#13100#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xizang/xizang.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3036">
+              <caret line="178" column="94" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="94" />
+              <folding>
+                <marker date="1543570187545" expanded="true" signature="3857:4180" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xizang/rikaze.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="46" column="114" lean-forward="true" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="114" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xizang/task.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xizang/lasa.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="109" column="36" lean-forward="true" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ningxia/ningxia.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+              <folding>
+                <marker date="1543573210084" expanded="true" signature="4541:4546" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ningxia/yinchuan.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="126" column="28" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1543571892031" expanded="true" signature="5183:5188" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qinghai/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#2#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/testganzhou.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/../../work/zhu/webscrap/test_9.py" />
+        <option value="$PROJECT_DIR$/profile" />
+        <option value="$PROJECT_DIR$/wenshan.py" />
+        <option value="$PROJECT_DIR$/puer.py" />
+        <option value="$PROJECT_DIR$/lincang.py" />
+        <option value="$PROJECT_DIR$/lijiang.py" />
+        <option value="$PROJECT_DIR$/dali.py" />
+        <option value="$PROJECT_DIR$/chuxiong.py" />
+        <option value="$PROJECT_DIR$/baoshan.py" />
+        <option value="$PROJECT_DIR$/tengchong.py" />
+        <option value="$PROJECT_DIR$/zhaotong.py" />
+        <option value="$PROJECT_DIR$/yuxi.py" />
+        <option value="$PROJECT_DIR$/yunnan.py" />
+        <option value="$PROJECT_DIR$/qinghai/profile" />
+        <option value="$PROJECT_DIR$/kunming.py" />
+        <option value="$PROJECT_DIR$/xizang/profile" />
+        <option value="$PROJECT_DIR$/xizang/baoshan.py" />
+        <option value="$PROJECT_DIR$/xizang/test.py" />
+        <option value="$PROJECT_DIR$/ningxia/profile" />
+        <option value="$PROJECT_DIR$/ningxia/test.py" />
+        <option value="$PROJECT_DIR$/ningxia/guyuan.py" />
+        <option value="$PROJECT_DIR$/xizang/lasa.py" />
+        <option value="$PROJECT_DIR$/ningxia/task.py" />
+        <option value="$PROJECT_DIR$/qinghai/task.py" />
+        <option value="$PROJECT_DIR$/xizang/task.py" />
+        <option value="$PROJECT_DIR$/qinghai/xining.py" />
+        <option value="$PROJECT_DIR$/xizang/test_f3.py" />
+        <option value="$PROJECT_DIR$/xizang/xizang.py" />
+        <option value="$PROJECT_DIR$/xizang/__init__.py" />
+        <option value="$PROJECT_DIR$/qinghai/__init__.py" />
+        <option value="$PROJECT_DIR$/ningxia/__init__.py" />
+        <option value="$PROJECT_DIR$/ningxia/yinchuan.py" />
+        <option value="$PROJECT_DIR$/qinghai/test.py" />
+        <option value="$PROJECT_DIR$/ningxia/ningxia.py" />
+        <option value="$PROJECT_DIR$/xizang/rikaze.py" />
+        <option value="$PROJECT_DIR$/qinghai/qinghai.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="960" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="yunnan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yunnan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yunnan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yunnan" type="462c0819:PsiDirectoryNode" />
+              <item name="ningxia" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yunnan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yunnan" type="462c0819:PsiDirectoryNode" />
+              <item name="qinghai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yunnan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yunnan" type="462c0819:PsiDirectoryNode" />
+              <item name="xizang" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jiangxi" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jacky\Desktop\云南省\yunnan" />
+      <recent name="C:\Users\jacky\Desktop\云南省\yunnan\ningxia" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jacky\Desktop\云南省\yunnan\qinghai" />
+      <recent name="C:\Users\jacky\Desktop\云南省\yunnan\ningxia" />
+      <recent name="C:\Users\jacky\Desktop\云南省\yunnan\xizang" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.qinghai">
+    <configuration name="ningxia" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="yunnan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ningxia" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ningxia/ningxia.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="qinghai" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="yunnan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qinghai" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qinghai/qinghai.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="yunnan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qinghai" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qinghai/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_f3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="yunnan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/xizang" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\jacky\Desktop\云南省\yunnan\test_f3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="yinchuan" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="yunnan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ningxia" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ningxia/yinchuan.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.yinchuan" />
+      <item itemvalue="Python.ningxia" />
+      <item itemvalue="Python.test_f3" />
+      <item itemvalue="Python.qinghai" />
+      <item itemvalue="Python.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.qinghai" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.test_f3" />
+        <item itemvalue="Python.ningxia" />
+        <item itemvalue="Python.yinchuan" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e00eaa05-68b4-40a4-adb7-d32a5ca78999" name="Default Changelist" comment="" />
+      <created>1543322342421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543322342421</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14392324" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4790997" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/testganzhou.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="232" column="27" selection-start-line="232" selection-start-column="27" selection-end-line="232" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../work/zhu/webscrap/test_9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="136" column="35078" selection-start-line="136" selection-start-column="35078" selection-end-line="136" selection-end-column="35078" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1543375509100" expanded="true" signature="1912:1915" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="77" column="43" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/puer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4334">
+          <caret line="203" column="30" lean-forward="true" selection-start-line="203" selection-start-column="30" selection-end-line="203" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lincang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="202" column="30" lean-forward="true" selection-start-line="202" selection-start-column="30" selection-end-line="202" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baoshan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2662">
+          <caret line="202" column="30" selection-start-line="202" selection-start-column="30" selection-end-line="202" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chuxiong.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="201" column="30" selection-start-line="201" selection-start-column="30" selection-end-line="201" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3283">
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wenshan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="203" column="30" selection-start-line="203" selection-start-column="30" selection-end-line="203" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tengchong.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yunnan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2829">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yuxi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1031">
+          <caret line="149" column="15" selection-start-line="149" selection-start-column="15" selection-end-line="149" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dali.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="202" column="30" selection-start-line="202" selection-start-column="30" selection-end-line="202" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhaotong.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="204" selection-start-line="204" selection-end-line="204" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lijiang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="199" column="30" selection-start-line="199" selection-start-column="30" selection-end-line="199" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1543397675676" expanded="true" signature="6205:6210" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1728686218/_elementtree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ningxia/guyuan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kunming.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="204" column="58" lean-forward="true" selection-start-line="204" selection-start-column="32" selection-end-line="204" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qinghai/profile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ningxia/profile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ningxia/task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="89" column="39" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qinghai/task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_f3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="110" selection-start-line="16" selection-start-column="110" selection-end-line="16" selection-end-column="110" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xizang/profile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ningxia/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qinghai/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xizang/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/python35/Lib/site-packages/lmfscrap/multipage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6292">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ningxia/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-508">
+          <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="33" />
+          <folding>
+            <element signature="e#73#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qinghai/xining.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1628">
+          <caret line="143" column="68" selection-start-line="143" selection-start-column="68" selection-end-line="143" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ningxia/ningxia.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="93" column="23" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
+          <folding>
+            <marker date="1543573210084" expanded="true" signature="4541:4546" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ningxia/yinchuan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="126" column="28" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1543571892031" expanded="true" signature="5183:5188" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qinghai/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#2#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xizang/task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xizang/lasa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="109" column="36" lean-forward="true" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xizang/rikaze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="46" column="114" lean-forward="true" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/python35/Lib/site-packages/zhulong/util/etl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="332" column="20" selection-start-line="332" selection-start-column="12" selection-end-line="332" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xizang/xizang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3036">
+          <caret line="178" column="94" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="94" />
+          <folding>
+            <marker date="1543570187545" expanded="true" signature="3857:4180" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qinghai/qinghai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#999#13100#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

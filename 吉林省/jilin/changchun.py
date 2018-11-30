@@ -93,7 +93,6 @@ def f1(driver,num):
 
             chang_address(driver, i, c_text)
             chang_page(driver, num)
-            print('页数{0}地区{1}'.format(num,i))
             is_useful = True
             break
 
@@ -131,7 +130,7 @@ def f1(driver,num):
 
         if '003002' in url:
 
-            tmp = [ name, ggstart_time, href]
+            tmp = [name, ggstart_time, href]
         else:
             tmp = [gg_type, name, ggstart_time, href]
 
@@ -281,25 +280,25 @@ def f3(driver, url):
 
 data=[
     ["zfcg_zhaobiao_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003001/003001001/CountyZfcgNotice.html",['gg_type',"name","ggstart_time","href","info"],f1,f2],
-    # ["zfcg_biangen_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003001/003001003/CountyZfcgNotice.html",['gg_type',"name","ggstart_time","href","info"],f1,f2],
-    # ["zfcg_zhongbiao_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003001/003001004/CountyZfcgNotice.html",['gg_type',"name","ggstart_time","href","info"],f1,f2],
+    ["zfcg_biangen_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003001/003001003/CountyZfcgNotice.html",['gg_type',"name","ggstart_time","href","info"],f1,f2],
+    ["zfcg_zhongbiao_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003001/003001004/CountyZfcgNotice.html",['gg_type',"name","ggstart_time","href","info"],f1,f2],
 
-    # ["gcjs_zhaobiao_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003002/003002001/CountyPurhcaseNotice.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["gcjs_zhongbiaohx_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003002/003002002/CountyPurhcaseNotice.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["gcjs_biangen_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003002/003002003/CountyPurhcaseNotice.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["gcjs_zhongbiao_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003002/003002004/CountyPurhcaseNotice.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_zhaobiao_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003002/003002001/CountyPurhcaseNotice.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_zhongbiaohx_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003002/003002002/CountyPurhcaseNotice.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_biangen_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003002/003002003/CountyPurhcaseNotice.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_zhongbiao_qx_gg","http://www.ccggzy.gov.cn/qxxxgk/003002/003002004/CountyPurhcaseNotice.html",["name","ggstart_time","href","info"],f1,f2],
 
-    #
-    # ["zfcg_yucai_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002001/002001002/CityZfcgNotice.html",["ggtype_","name","ggstart_time","href","info"],f4,f5],
-    # ["zfcg_zhaobiao_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002001/002001001/CityZfcgNotice.html",['ggtype_',"name","ggstart_time","href","info"],f4,f5],
-    # ["zfcg_biangen_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002001/002001003/CityZfcgNotice.html",['ggtype_',"name","ggstart_time","href","info"],f4,f5],
 
-    # ["zfcg_jieguo_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002001/002001004/CityZfcgNotice.html",['ggtype_',"name","ggstart_time","href","info"],f4,f5],
-    #
-    # ["gcjs_zhaobiao_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002002/002002001/CityPurchaseNotice.html",["name","ggstart_time","href","info"],f4,f5],
-    # ["gcjs_zhongbiaohx_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002002/002002002/CityPurchaseNotice.html",["name","ggstart_time","href","info"],f4,f5],
-    # ["gcjs_biangen_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002002/002002003/CityPurchaseNotice.html",["name","ggstart_time","href","info"],f4,f5],
-    # ["gcjs_zhongbiao_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002002/002002004/CityPurchaseNotice.html",["name","ggstart_time","href","info"],f4,f5],
+    ["zfcg_yucai_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002001/002001002/CityZfcgNotice.html",["ggtype_","name","ggstart_time","href","info"],f4,f5],
+    ["zfcg_zhaobiao_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002001/002001001/CityZfcgNotice.html",['ggtype_',"name","ggstart_time","href","info"],f4,f5],
+    ["zfcg_biangen_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002001/002001003/CityZfcgNotice.html",['ggtype_',"name","ggstart_time","href","info"],f4,f5],
+
+    ["zfcg_jieguo_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002001/002001004/CityZfcgNotice.html",['ggtype_',"name","ggstart_time","href","info"],f4,f5],
+
+    ["gcjs_zhaobiao_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002002/002002001/CityPurchaseNotice.html",["name","ggstart_time","href","info"],f4,f5],
+    ["gcjs_zhongbiaohx_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002002/002002002/CityPurchaseNotice.html",["name","ggstart_time","href","info"],f4,f5],
+    ["gcjs_biangen_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002002/002002003/CityPurchaseNotice.html",["name","ggstart_time","href","info"],f4,f5],
+    ["gcjs_zhongbiao_sj_gg","http://www.ccggzy.gov.cn/sjxxgk/002002/002002004/CityPurchaseNotice.html",["name","ggstart_time","href","info"],f4,f5],
 
 ]
 
@@ -336,5 +335,3 @@ def work(conp,**args):
 if __name__=='__main__':
 
     work(conp=["postgres","since2015","192.168.3.171","jilin","changchun"],cdc_total=None)
-    # work(conp=["testor","zhulong","192.168.3.171","test","lch"],cdc_total=None)
-    pass

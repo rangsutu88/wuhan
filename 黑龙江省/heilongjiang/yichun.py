@@ -136,4 +136,4 @@ def work(conp,**args):
 if __name__=='__main__':
 
 
-    work(conp=["postgres","since2015","192.168.3.171","heilongjiang","yichun"])
+    work(conp=["postgres","since2015","192.168.3.171","heilongjiang","yichun"],num=5,cdc_total=9)

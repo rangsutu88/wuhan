@@ -31,7 +31,6 @@ _name_='daqing'
 def f1(driver,num):
     locator = (By.XPATH, '//ul[@class="notice-list lf-list1"]/form/li[1]/a')
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
-    url = driver.current_url
 
     cnum = driver.find_element_by_xpath('//div[@class="pagination"]/a[@class="current"]').text
 
@@ -86,8 +85,6 @@ def f2(driver):
     return total
 
 
-
-
 def f3(driver, url):
     driver.get(url)
 
@@ -125,16 +122,16 @@ def f3(driver, url):
 
 
 data=[
-    # ["gcjs_zhaobiao_gg","http://zfcgzx.daqing.gov.cn/jyxxJsgcZbgg/index.htm",["name","ggstart_time","href","info"],f1,f2],
-    # ["gcjs_chengqingbiangeng_gg","http://zfcgzx.daqing.gov.cn/jyxxJsgcBgcggg/index.htm",["name","ggstart_time","href","info"],f1,f2],
-    # #包含中标，中标候选人，放弃中标
-    # ["gcjs_zhong_gg","http://zfcgzx.daqing.gov.cn/jyxxJsgcZbgs/index.htm",["name","ggstart_time","href","info"],f1,f2],
-    #
-    # ["zfcg_zhaobiao_gg","http://zfcgzx.daqing.gov.cn/jyxxZfcgCggg/index.htm",["name","ggstart_time","href","info"],f1,f2],
-    # ["zfcg_zhongbiaohx_gg","http://zfcgzx.daqing.gov.cn/jyxxZfcgYzbgg/index.htm",["name","ggstart_time","href","info"],f1,f2],
-    # ["zfcg_zhongbiao_gg","http://zfcgzx.daqing.gov.cn/jyxxZfcgZbgg/index.htm",["name","ggstart_time","href","info"],f1,f2],
-    #
-    # ["zfcg_liubiao_gg","http://zfcgzx.daqing.gov.cn/jyxxZfcgFbgg/index.htm",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_zhaobiao_gg","http://zfcgzx.daqing.gov.cn/jyxxJsgcZbgg/index.htm",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_chengqingbiangeng_gg","http://zfcgzx.daqing.gov.cn/jyxxJsgcBgcggg/index.htm",["name","ggstart_time","href","info"],f1,f2],
+    ###包含中标，中标候选人，放弃中标
+    ["gcjs_zhong_gg","http://zfcgzx.daqing.gov.cn/jyxxJsgcZbgs/index.htm",["name","ggstart_time","href","info"],f1,f2],
+
+    ["zfcg_zhaobiao_gg","http://zfcgzx.daqing.gov.cn/jyxxZfcgCggg/index.htm",["name","ggstart_time","href","info"],f1,f2],
+    ["zfcg_zhongbiaohx_gg","http://zfcgzx.daqing.gov.cn/jyxxZfcgYzbgg/index.htm",["name","ggstart_time","href","info"],f1,f2],
+    ["zfcg_zhongbiao_gg","http://zfcgzx.daqing.gov.cn/jyxxZfcgZbgg/index.htm",["name","ggstart_time","href","info"],f1,f2],
+
+    ["zfcg_liubiao_gg","http://zfcgzx.daqing.gov.cn/jyxxZfcgFbgg/index.htm",["name","ggstart_time","href","info"],f1,f2],
 
 
 ]

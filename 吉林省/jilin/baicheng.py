@@ -141,8 +141,6 @@ def f3(driver, url):
     return div
 
 
-
-
 data=[
 
     ["gcjs_zhaobiao_gg","http://www.bcggzy.gov.cn/jyxx/003001/003001001/1.html",["name","ggstart_time","href","info"],f1,f2],
@@ -153,7 +151,6 @@ data=[
     ["zfcg_zhaobiao_gg","http://www.bcggzy.gov.cn/jyxx/003002/003002001/1.html",["name","ggstart_time","href","info"],f1,f2],
     ["zfcg_biangen_gg","http://www.bcggzy.gov.cn/jyxx/003002/003002002/1.html",["name","ggstart_time","href","info"],f1,f2],
     ["zfcg_zhongbiao_gg","http://www.bcggzy.gov.cn/jyxx/003002/003002003/1.html",["name","ggstart_time","href","info"],f1,f2],
-
 ]
 
 def work(conp,**args):

@@ -3,19 +3,62 @@
   <component name="ChangeListManager">
     <list default="true" id="f3b8fd62-2205-4e12-bfe0-8f02d86cf2e8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/jilin$changchun.coverage" NAME="changchun Coverage Results" MODIFIED="1543281180825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jilin$liaoyuan.coverage" NAME="liaoyuan Coverage Results" MODIFIED="1543285082579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jilin$songyuan.coverage" NAME="songyuan Coverage Results" MODIFIED="1543285376992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jilin$baishan.coverage" NAME="baishan Coverage Results" MODIFIED="1543280978635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jilin$baicheng.coverage" NAME="baicheng Coverage Results" MODIFIED="1543280906073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jilin$jilinshi.coverage" NAME="jilinshi Coverage Results" MODIFIED="1543285077846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jilin$tonghua.coverage" NAME="tonghua Coverage Results" MODIFIED="1543286495821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jilin$siping.coverage" NAME="siping Coverage Results" MODIFIED="1543285888734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jilin$jilin.coverage" NAME="jilin Coverage Results" MODIFIED="1543287241455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-196308425">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="profile" value="9" />
+          <entry key="py" value="153" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="Python" value="153" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="11" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="baicheng.py" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baicheng.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2518">
-              <caret line="164" selection-start-line="164" selection-end-line="164" />
+            <state relative-caret-position="3259">
+              <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -23,10 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="baishan.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baishan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1122">
+            <state relative-caret-position="479">
+              <caret line="137" column="72" selection-start-line="137" selection-start-column="72" selection-end-line="137" selection-end-column="72" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -34,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changchun.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/changchun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1275">
-              <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+            <state relative-caret-position="1306">
+              <caret line="336" column="89" selection-start-line="336" selection-start-column="89" selection-end-line="336" selection-end-column="89" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -46,10 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tonghua.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tonghua.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-304">
+            <state relative-caret-position="370">
+              <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -57,10 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="songyuan.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/songyuan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1919">
+            <state relative-caret-position="2063">
+              <caret line="136" column="73" selection-start-line="136" selection-start-column="73" selection-end-line="136" selection-end-column="73" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -68,10 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="siping.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/siping.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2276">
+            <state relative-caret-position="1535">
+              <caret line="160" column="71" selection-start-line="160" selection-start-column="71" selection-end-line="160" selection-end-column="71" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -79,20 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="34" selection-start-column="34" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="task.py" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="1870">
+              <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -100,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jilin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jilin.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/liaoyuan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="151" selection-start-line="151" selection-end-line="151" />
+            <state relative-caret-position="479">
+              <caret line="137" column="73" selection-start-line="137" selection-start-column="73" selection-end-line="137" selection-end-column="73" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -112,11 +150,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jilinshi.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jilin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="188" column="122" selection-start-line="188" selection-start-column="122" selection-end-line="188" selection-end-column="122" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1543288342193" expanded="true" signature="6177:6182" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jilinshi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714">
-              <caret line="18" column="68" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="68" />
+            <state relative-caret-position="324">
+              <caret line="227" column="88" selection-start-line="227" selection-start-column="88" selection-end-line="227" selection-end-column="88" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -134,11 +185,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/baicheng.py" />
-        <option value="$PROJECT_DIR$/jilin.py" />
+        <option value="$PROJECT_DIR$/tonghua.py" />
+        <option value="$PROJECT_DIR$/songyuan.py" />
+        <option value="$PROJECT_DIR$/siping.py" />
+        <option value="$PROJECT_DIR$/liaoyuan.py" />
         <option value="$PROJECT_DIR$/jilinshi.py" />
         <option value="$PROJECT_DIR$/changchun.py" />
+        <option value="$PROJECT_DIR$/baishan.py" />
         <option value="$PROJECT_DIR$/profile" />
+        <option value="$PROJECT_DIR$/jilin.py" />
+        <option value="$PROJECT_DIR$/baicheng.py" />
         <option value="$PROJECT_DIR$/task.py" />
       </list>
     </option>
@@ -148,9 +204,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
@@ -179,7 +232,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../黑龙江省/heilongjiang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../黑龙江省" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -196,6 +249,134 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Python.jilin">
+    <configuration name="jilin" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="jilin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jilin.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="liaoyuan" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="jilin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/liaoyuan.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="siping" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="jilin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/siping.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="songyuan" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="jilin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/songyuan.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tonghua" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="jilin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tonghua.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.liaoyuan" />
+      <item itemvalue="Python.siping" />
+      <item itemvalue="Python.songyuan" />
+      <item itemvalue="Python.tonghua" />
+      <item itemvalue="Python.jilin" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.jilin" />
+        <item itemvalue="Python.tonghua" />
+        <item itemvalue="Python.siping" />
+        <item itemvalue="Python.songyuan" />
+        <item itemvalue="Python.liaoyuan" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -210,30 +391,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17138238" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17324094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.357985" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,10 +426,27 @@
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/profile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jilinshi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="227" column="88" selection-start-line="227" selection-start-column="88" selection-end-line="227" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/baicheng.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2518">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        <state relative-caret-position="3259">
+          <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -258,51 +455,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baishan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122">
+        <state relative-caret-position="479">
+          <caret line="137" column="72" selection-start-line="137" selection-start-column="72" selection-end-line="137" selection-end-column="72" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tonghua.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/songyuan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1919">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/siping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2276">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/changchun.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1275">
-          <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+        <state relative-caret-position="1306">
+          <caret line="336" column="89" selection-start-line="336" selection-start-column="89" selection-end-line="336" selection-end-column="89" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -311,18 +475,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jilin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
+        <state relative-caret-position="215">
+          <caret line="188" column="122" selection-start-line="188" selection-start-column="122" selection-end-line="188" selection-end-column="122" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1543288342193" expanded="true" signature="6177:6182" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liaoyuan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="137" column="73" selection-start-line="137" selection-start-column="73" selection-end-line="137" selection-end-column="73" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jilinshi.py">
+    <entry file="file://$PROJECT_DIR$/songyuan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="18" column="68" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="68" />
+        <state relative-caret-position="2063">
+          <caret line="136" column="73" selection-start-line="136" selection-start-column="73" selection-end-line="136" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/siping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1535">
+          <caret line="160" column="71" selection-start-line="160" selection-start-column="71" selection-end-line="160" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tonghua.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -331,8 +526,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="1870">
+          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

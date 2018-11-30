@@ -115,15 +115,15 @@ def f3(driver, url):
 
 data=[
 
-    # ["gcjs_zhaobiao_gg","http://www.bsggzyjy.gov.cn/jyxx/003001/003001001/1.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["gcjs_biangen_gg","http://www.bsggzyjy.gov.cn/jyxx/003001/003001002/1.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["gcjs_zhongbiaohx_gg","http://www.bsggzyjy.gov.cn/jyxx/003001/003001003/1.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["gcjs_zhongbiao_gg","http://www.bsggzyjy.gov.cn/jyxx/003001/003001004/1.html",["name","ggstart_time","href","info"],f1,f2],
-    #
-    # ["zfcg_zhaobiao_gg","http://www.bsggzyjy.gov.cn/jyxx/003002/003002001/1.html",["name","ggstart_time","href","info"],f1,f2],
-    #包含：流标，变更
-    # ["zfcg_bian_gg","http://www.bsggzyjy.gov.cn/jyxx/003002/003002002/1.html",["name","ggstart_time","href","info"],f1,f2],
-    # ["zfcg_zhongbiao_gg","http://www.bsggzyjy.gov.cn/jyxx/003002/003002003/1.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_zhaobiao_gg","http://www.bsggzyjy.gov.cn/jyxx/003001/003001001/1.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_biangen_gg","http://www.bsggzyjy.gov.cn/jyxx/003001/003001002/1.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_zhongbiaohx_gg","http://www.bsggzyjy.gov.cn/jyxx/003001/003001003/1.html",["name","ggstart_time","href","info"],f1,f2],
+    ["gcjs_zhongbiao_gg","http://www.bsggzyjy.gov.cn/jyxx/003001/003001004/1.html",["name","ggstart_time","href","info"],f1,f2],
+
+    ["zfcg_zhaobiao_gg","http://www.bsggzyjy.gov.cn/jyxx/003002/003002001/1.html",["name","ggstart_time","href","info"],f1,f2],
+    ######包含：流标，变更
+    ["zfcg_bian_gg","http://www.bsggzyjy.gov.cn/jyxx/003002/003002002/1.html",["name","ggstart_time","href","info"],f1,f2],
+    ["zfcg_zhongbiao_gg","http://www.bsggzyjy.gov.cn/jyxx/003002/003002003/1.html",["name","ggstart_time","href","info"],f1,f2],
     ["zfcg_liubiao_gg","http://www.bsggzyjy.gov.cn/jyxx/003002/003002004/1.html",["name","ggstart_time","href","info"],f1,f2],
 
 ]

@@ -129,8 +129,6 @@ def f5(driver):
 
 def f3(driver, url):
     driver.get(url)
-    url=driver.current_url
-
 
     locator = (By.XPATH, '//div[@class="news_inf"] | //div[@class="xxej"]')
 
@@ -166,19 +164,19 @@ data=[
     ["gcjs_zhongbiaohx_gg","http://www.hljggzyjyw.gov.cn/trade/tradezfcg?cid=16&pageNo=1&type=4&notice_name=",["name","ggstart_time","href","info"],f1,f2],
     ["gcjs_zhongbiao_gg","http://www.hljggzyjyw.gov.cn/trade/tradezfcg?cid=16&pageNo=1&type=3&notice_name=",["name","ggstart_time","href","info"],f1,f2],
 
-    #包含招标，变更
+    ##包含招标，变更
     ["zfcg_zb_gg","http://www.hljcg.gov.cn/xwzs!queryXwxxqx.action?lbbh=4",['address',"name","ggstart_time","href","info"],f4,f5],
     ["zfcg_yucai_gg","http://www.hljcg.gov.cn/xwzs!queryXwxxqx.action?lbbh=99",['address',"name","ggstart_time","href","info"],f4,f5],
     ["zfcg_dyxly_gg","http://www.hljcg.gov.cn/xwzs!queryXwxxqx.action?lbbh=98",['address',"name","ggstart_time","href","info"],f4,f5],
-    #包含流标，变更
+    ##包含流标，变更
     ["zfcg_lb_gg","http://www.hljcg.gov.cn/xwzs!queryXwxxqx.action?lbbh=30",['address',"name","ggstart_time","href","info"],f4,f5],
     ["zfcg_zhongbiao_gg","http://www.hljcg.gov.cn/xwzs!queryXwxxqx.action?lbbh=5",['address',"name","ggstart_time","href","info"],f4,f5],
 
 
     ["yycg_zhaobiao_gg","http://www.hljggzyjyw.gov.cn/trade/tradezfcg?cid=20&pageNo=1&type=1&notice_name=",["name","ggstart_time","href","info"],f1,f2],
-    #无信息
+    ##无信息
     ["yycg_liubiao_gg","http://www.hljggzyjyw.gov.cn/trade/tradezfcg?cid=20&pageNo=1&type=5&notice_name=",["name","ggstart_time","href","info"],f1,f2],
-    #只有一条数据
+    ##只有一条数据
     ["yycg_zhongbiao_gg","http://www.hljggzyjyw.gov.cn/trade/tradezfcg?cid=20&pageNo=1&type=4&notice_name=",["name","ggstart_time","href","info"],f1,f2],
     ["yycg_zhongbiaohx_gg","http://www.hljggzyjyw.gov.cn/trade/tradezfcg?cid=20&pageNo=1&type=3&notice_name=",["name","ggstart_time","href","info"],f1,f2],
 
@@ -193,4 +191,4 @@ def work(conp,**args):
 if __name__=='__main__':
 
 
-    work(conp=["postgres","since2015","192.168.3.171","heilongjiang","heilongjiang"])
+    work(conp=["postgres","since2015","192.168.3.171","heilongjiang","heilongjiang"],num=10)

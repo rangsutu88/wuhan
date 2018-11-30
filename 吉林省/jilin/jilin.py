@@ -179,15 +179,14 @@ def f3(driver, url):
 
 
 data = [
-    # ["gcjs_zhaobiao_gg","http://www.jl.gov.cn/ggzy/gcjs/zbgg/",["name","ggstart_time","href",'address',"info"],f1,f2],
-    # ["gcjs_biangen_gg","http://www.jl.gov.cn/ggzy/gcjs/bggggc/",["name","ggstart_time","href",'address',"info"],f1,f2],
-    # ["gcjs_zhongbiaohx_gg","http://www.jl.gov.cn/ggzy/gcjs/zbgggc/",["name","ggstart_time","href",'address',"info"],f1,f2],
+    ["gcjs_zhaobiao_gg","http://www.jl.gov.cn/ggzy/gcjs/zbgg/",["name","ggstart_time","href",'address',"info"],f1,f2],
+    ["gcjs_biangen_gg","http://www.jl.gov.cn/ggzy/gcjs/bggggc/",["name","ggstart_time","href",'address',"info"],f1,f2],
+    ["gcjs_zhongbiaohx_gg","http://www.jl.gov.cn/ggzy/gcjs/zbgggc/",["name","ggstart_time","href",'address',"info"],f1,f2],
 
     ["zfcg_zhaobiao_gg","http://www.jl.gov.cn/ggzy/zfcg/cggg/",["name","ggstart_time","href",'address',"info"],f1,f2],
-    # ["zfcg_biangen_gg","http://www.jl.gov.cn/ggzy/zfcg/bggg/",["name","ggstart_time","href",'address',"info"],f1,f2],
+    ["zfcg_biangen_gg","http://www.jl.gov.cn/ggzy/zfcg/bggg/",["name","ggstart_time","href",'address',"info"],f1,f2],
 
-    # ["zfcg_zhongbiao_gg", "http://www.jl.gov.cn/ggzy/zfcg/zbgg/", ["name", "ggstart_time", "href", 'address', "info"], f1,
-    #  f2],
+    ["zfcg_zhongbiao_gg", "http://www.jl.gov.cn/ggzy/zfcg/zbgg/", ["name", "ggstart_time", "href", 'address', "info"], f1,f2],
 
     # 单一性来源无法爬取
     # 医药采购数据太少，未爬取
@@ -195,8 +194,8 @@ data = [
 
 def work(conp,**args):
     est_meta(conp,data=data,diqu="吉林省吉林省",**args)
-    # est_html(conp,f=f3,**args)
+    est_html(conp,f=f3,**args)
 
 if __name__=='__main__':
 
-    work(conp=["postgres", "since2015", "192.168.3.171", "jilin", "jilin"],cdc_total=1)
+    work(conp=["postgres", "since2015", "192.168.3.171", "jilin", "jilin"],num=10)

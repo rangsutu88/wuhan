@@ -158,9 +158,8 @@ def f4(driver, num):
     global COOKIES
     mark = driver.current_url
 
-    if num%20==1:
+    if num%20==1 or ('2301' in mark):
         get_cookie(driver)
-
 
     COOKIES = driver.get_cookies()[0]
     driver.add_cookie(COOKIES)
@@ -252,7 +251,7 @@ def f3(driver, url):
     driver.get(url)
     url = driver.current_url
 
-    locator = (By.XPATH, '//div[@id="main_box"]/table/tbody/tr[4]')
+    locator = (By.XPATH, '//div[@id="main_box"]/table/tbody/tr[4] | //div[@class="xxej"]')
 
     WebDriverWait(driver, 10).until(EC.presence_of_all_elements_located(locator))
 
@@ -271,6 +270,8 @@ def f3(driver, url):
 
     soup = BeautifulSoup(page, 'lxml')
     div = soup.find('div', id="main_box").find('table').find('tbody').find_all('tr', recursive=False)[3]
+    if div == None:
+        div= soup.find('div',class_="xxej")
 
     return div
 
@@ -282,11 +283,12 @@ data = [
     ["gcjs_zhongbiaohx_gg", "http://113.6.234.4/Bid_Front/KBMore.aspx?t=%u5168%u90e8",
      ["name", "ggstart_time", "href", 'click_num', "info"], f1, f2],
 
-    #以下已爬完
-    # ["zfcg_zhaobiao_gg","http://www.hljcg.gov.cn/xwzs!queryXwxxqx.action?lbbh=42301",['address',"name","ggstart_time","href","info"],f4,f5],
-    #包含流标，中标
-    # ["zfcg_zhong_gg", "http://www.hljcg.gov.cn/xwzs!queryXwxxqx.action?lbbh=52301",
-    #  ['address', "name", "ggstart_time", "href", "info"], f4, f5],
+
+    ["zfcg_zhaobiao_gg","http://www.hljcg.gov.cn/xwzs!queryXwxxqx.action?lbbh=42301",
+     ['address',"name","ggstart_time","href","info"],f4,f5],
+    #####包含流标，中标
+    ["zfcg_zhong_gg", "http://www.hljcg.gov.cn/xwzs!queryXwxxqx.action?lbbh=52301",
+     ['address', "name", "ggstart_time", "href", "info"], f4, f5],
 ]
 
 def work(conp,**args):
@@ -296,4 +298,5 @@ def work(conp,**args):
 if __name__=='__main__':
 
 
-    work(conp=["postgres", "since2015", "192.168.3.171", "heilongjiang", "haerbin"])
+    conp=["postgres", "since2015", "192.168.3.171", "heilongjiang", "haerbin"]
+    work(conp=conp)

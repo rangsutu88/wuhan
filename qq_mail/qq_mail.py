@@ -15,8 +15,7 @@ from selenium.webdriver.chrome.options import Options
 from pymysql import connect
 
 URL='https://mail.qq.com/'
-UA='1371214116'
-PW='xinjiu522590.'
+
 
 def login(driver,username,password):
     driver.switch_to.frame('login_frame')

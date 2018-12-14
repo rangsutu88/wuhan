@@ -1,0 +1,37 @@
+
+anhui
+黄山 None 只删除gg_html表中None
+合肥 全删 所有表全删
+安庆 全删 gg_html全删
+马鞍山 404 只删除gg_html表中404
+宿州 None 只删除gg_html表中None
+淮南 None 只删除gg_html表中None
+宣城 None 只删除gg_html表中None
+ 
+heilongjiang
+大庆   只修改gg_html表 删除 page like '%不在白名单内或者IP已经过了有效期失效不能访问%';
+
+jilin
+吉林 全删 除了gg_html表
+吉林市 全删 除了gg_html表
+长春 全删 除了gg_html表
+
+jinagxi
+无问题,但是做了优化
+
+xizang
+拉萨  全删 除了gg_html表
+日喀则  全删 除了gg_html表
+
+ningxia
+无问题
+
+qinghai
+青海省 全删 除了gg_html表
+
+yunnan
+无问题
+
+
+shanxi1
+尽量晚上爬全量

@@ -1,17 +1,17 @@
 from lmf.dbv2 import db_command
 
-from zhulong.yunnan import baoshan
-from zhulong.yunnan import chuxiong
-from zhulong.yunnan import dali
-from zhulong.yunnan import lijiang
-from zhulong.yunnan import lincang
-from zhulong.yunnan import puer
-from zhulong.yunnan import tengchong
-from zhulong.yunnan import wenshan
-from zhulong.yunnan import yunnan
-from zhulong.yunnan import yuxi
-from zhulong.yunnan import zhaotong
-from zhulong.yunnan import kunming
+from lch.zhulong import baoshan
+from lch.zhulong import chuxiong
+from lch.zhulong import dali
+from lch.zhulong import lijiang
+from lch.zhulong import lincang
+from lch.zhulong import puer
+from lch.zhulong import tengchong
+from lch.zhulong import wenshan
+from lch.zhulong import yunnan
+from lch.zhulong import yuxi
+from lch.zhulong import zhaotong
+from lch.zhulong import kunming
 
 
 from os.path import join, dirname

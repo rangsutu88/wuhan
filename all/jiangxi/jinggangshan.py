@@ -15,7 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import requests
 import json
 
-from zhulong.util.etl import est_tbs, est_meta, est_html, est_gg
+from lch.zhulong import est_tbs, est_meta, est_html, est_gg
 
 
 # __conp=["postgres","since2015","192.168.3.171","hunan","changsha"]
@@ -29,44 +29,37 @@ from zhulong.util.etl import est_tbs, est_meta, est_html, est_gg
 _name_='jinggangshan'
 
 def f1(driver,num):
+    vw_class_dict={
+        'zfcggg':'vw_class_container510989586913',
+        'jsgcgg':'vw_class_container704506123991',
+        'xeyxgcgg':'vw_class_container972030964765',
+        'jgs-zbgs':'vw_class_container092363484519',
+    }
 
     locator = (By.XPATH, "//div[@class='list2']/span/ul/li[1]/a")
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
 
-    while True:
+    page_all = driver.find_element_by_xpath("//div[@class='list2']/span").text
+    cnum = re.findall('页次：(\d+)/', page_all)[0]
+    url=driver.current_url
+    mark=re.findall('html/(.+)/index.html',url)[0]
 
-        page_all = driver.find_element_by_xpath("//div[@class='list2']/span").text
-        page = re.findall('页次：(\d+)/', page_all)[0]
+    if int(cnum) != num:
 
-        if int(page) == num:
-            break
+        val = driver.find_element_by_xpath("//div[@class='list2']/span/ul/li[1]/a").get_attribute('href').rsplit('/',maxsplit=1)[1]
 
-        if abs(int(page) - num) > 25:
-            val = driver.find_element_by_xpath("//div[@class='list2']/span/ul/li[1]/a").text
-            driver.execute_script("goClass_lastPage();")
+        driver.execute_script("""
+        function goClass_page(){
+        currentPageNo.val(%s);
+        pubPostAjax('/frontDialogClassNewsList_getClassNews','%s','');
+        }
+        num=10
+        goClass_page()
+        """%(num,vw_class_dict[mark]))
 
-            locator = (By.XPATH, "//div[@class='list2']/span/ul/li[1]/a[not(contains(string(),'%s'))]" % val)
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+        locator = (By.XPATH, "//div[@class='list2']/span/ul/li[1]/a[not(contains(@href,'%s'))]" % val)
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
 
-
-        page_all = driver.find_element_by_xpath("//div[@class='list2']/span").text
-        page = re.findall('页次：(\d+)/', page_all)[0]
-
-        if int(page) > num:
-            val = driver.find_element_by_xpath("//div[@class='list2']/span/ul/li[1]/a").text
-
-            driver.execute_script("goClass_previousPage();")
-
-            locator = (By.XPATH, "//div[@class='list2']/span/ul/li[1]/a[not(contains(string(),'%s'))]" % val)
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
-
-        if int(page) < num:
-            val = driver.find_element_by_xpath("//div[@class='list2']/span/ul/li[1]/a").text
-
-            driver.execute_script("goClass_nextPage();")
-
-            locator = (By.XPATH, "//div[@class='list2']/span/ul/li[1]/a[not(contains(string(),'%s'))]" % val)
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
 
     data=[]
 
@@ -146,11 +139,11 @@ data=[
 def work(conp,**args):
     est_meta(conp,data=data,diqu="江西省井冈山市",**args)
     est_html(conp,f=f3,**args)
-    # est_gg(conp,diqu="江西省井冈山市")
+
 
 
 if __name__=='__main__':
 
     conp=["postgres","since2015","192.168.3.171","jiangxi","jinggangshan"]
 
-    work(conp=conp,headless=True,)
+    work(conp=conp)

@@ -20,7 +20,7 @@ from zhulong.util.etl import est_tbs,est_meta,est_html
 # __conp=["postgres","since2015","192.168.3.171","hunan","changsha"]
 
 #
-# url="http://www.ccggzy.gov.cn/qxxxgk/003002/003002004/CountyPurhcaseNotice.html"
+# url="http://ggzy.siping.gov.cn/jyxx/004002/004002002/about.html"
 # driver=webdriver.Chrome()
 # driver.minimize_window()
 # driver.get(url)
@@ -36,21 +36,23 @@ def f1(driver,num):
     try:
         cnum = driver.find_element_by_xpath('//li[@class="ewb-page-li ewb-page-border current"]').text.strip()
     except:
+        locator = (By.XPATH, '//ul[@class="wb-data-item"][count(*)<18 and count(*)>=1]')
+        WebDriverWait(driver, 5).until(EC.presence_of_element_located(locator))
         cnum='1'
 
     if cnum != str(num):
         url = url.rsplit('/', maxsplit=1)[0] + '/' + str(num) + '.html'
-        val = driver.find_element_by_xpath('//ul[@class="wb-data-item"]/li[1]/div/a').text
+        val = driver.find_element_by_xpath('//ul[@class="wb-data-item"]/li[1]/div/a').get_attribute('href')[-30:]
 
         driver.get(url)
 
-        locator = (By.XPATH, '//ul[@class="wb-data-item"]/li[1]/div/a[not(contains(string(),"%s"))]' % val)
+        locator = (By.XPATH, '//ul[@class="wb-data-item"]/li[1]/div/a[not(contains(@href,"%s"))]' % val)
         WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
 
     data = []
 
     html = driver.page_source
-    soup = BeautifulSoup(html, 'lxml')
+    soup = BeautifulSoup(html, 'html.parser')
     div = soup.find('ul', class_='wb-data-item')
     trs = div.find_all('li')
 
@@ -79,23 +81,31 @@ def f2(driver):
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
 
     while True:
-        val = driver.find_element_by_xpath('//ul[@class="wb-data-item"]/li[1]/div/a').text
+        val = driver.find_element_by_xpath('//ul[@class="wb-data-item"]/li[1]/div/a').get_attribute('href')[-30:]
         try:
-            driver.find_element_by_xpath('//li[@class="ewb-page-li ewb-page-border "][last()]').click()
+            href=driver.find_element_by_xpath('//li[@class="ewb-page-li ewb-page-border "][last()]/a').get_attribute('href')
+
+            driver.get(href)
         except:
+            locator = (By.XPATH, '//ul[@class="wb-data-item"][count(*)<18 and count(*)>=1]')
+            WebDriverWait(driver, 5).until(EC.presence_of_element_located(locator))
             total=1
             break
-        locator = (By.XPATH, '//ul[@class="wb-data-item"]/li[1]/div/a[not(contains(string(),"%s"))]' % val)
+        locator = (By.XPATH, '//ul[@class="wb-data-item"]/li[1]/div/a[not(contains(@href,"%s"))]' % val)
         WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
         time.sleep(3)
         try:
-            val = driver.find_element_by_xpath('//ul[@class="wb-data-item"]/li[1]/div/a').text
-            driver.find_element_by_xpath('//li[@class="ewb-page-li ewb-page-border ewb-page-hover"][2]/a').click()
+            val = driver.find_element_by_xpath('//ul[@class="wb-data-item"]/li[1]/div/a').get_attribute('href')[-30:]
+            href=driver.find_element_by_xpath('//li[@class="ewb-page-li ewb-page-border ewb-page-hover"][2]/a').get_attribute('href')
+            driver.get(href)
 
-            locator = (By.XPATH, '//ul[@class="wb-data-item"]/li[1]/div/a[not(contains(string(),"%s"))]' % val)
+            locator = (By.XPATH, '//ul[@class="wb-data-item"]/li[1]/div/a[not(contains(@href,"%s"))]' % val)
             WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
         except:
-            total = driver.find_element_by_xpath('//li[@class="ewb-page-li ewb-page-border current"]').text.strip()
+            locator = (By.XPATH,'//li[@class="ewb-page-li ewb-page-border ewb-page-hover"][2][count(*)=0]')
+            WebDriverWait(driver,10).until(EC.presence_of_element_located(locator))
+            total = driver.find_element_by_xpath('//li[@class="ewb-page-li ewb-page-border current"]').get_attribute('textContent')
+
             break
 
     total = int(total)
@@ -124,7 +134,7 @@ def f3(driver, url):
 
     page = driver.page_source
 
-    soup = BeautifulSoup(page, 'lxml')
+    soup = BeautifulSoup(page, 'html.parser')
     div = soup.find('div',class_='ewb-article-info')
     return div
 
@@ -156,6 +166,6 @@ def work(conp,**args):
     est_html(conp,f=f3,**args)
 
 if __name__=='__main__':
+    conp = ["postgres", "since2015", "192.168.3.171", "jilin", "siping"]
 
-
-    work(conp=["postgres","since2015","192.168.3.171","jilin","siping"])
+    work(conp=conp)

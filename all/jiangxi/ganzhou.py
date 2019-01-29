@@ -2,20 +2,14 @@ import time
 from collections import OrderedDict
 
 import pandas as pd
-import re
 
-from selenium import webdriver
 from bs4 import BeautifulSoup
-from lmf.dbv2 import db_write
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException,StaleElementReferenceException
-from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-from zhulong.util.etl import est_tbs, est_meta, est_html, add_info
+from lch.zhulong import est_meta, est_html, add_info
 
 
 # __conp=["postgres","since2015","192.168.3.171","hunan","hengyang"]

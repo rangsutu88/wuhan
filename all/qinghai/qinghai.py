@@ -1,21 +1,14 @@
 import time
 
 import pandas as pd
-import re
 
-from selenium import webdriver
 from bs4 import BeautifulSoup
-from lmf.dbv2 import db_write
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException,StaleElementReferenceException
-from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-from zhulong.util.etl import est_tbs, est_meta, est_html, est_gg
-
+from zhulong.util.etl import est_meta, est_html
 
 # __conp=["postgres","since2015","192.168.3.171","hunan","hengyang"]
 
@@ -396,8 +389,6 @@ def f1(driver,num):
         tmp = [name, href, address, ggstart_time]
         data.append(tmp)
 
-
-
     df=pd.DataFrame(data=data)
     df['info']=None
     return df
@@ -406,21 +397,12 @@ def f1(driver,num):
 
 def f2(driver):
 
-
     locator = (By.XPATH, '//table[@class="ewb-info-table"]/tbody/tr[1]/td[2]/a')
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
-    url=driver.current_url
-    try:
-        page = driver.find_element_by_link_text('尾页').get_attribute('data-page-index')
-        total = int(page)+1
-        total=total
-    except:
-        if '001003' in url:
-            total=driver.find_element_by_xpath('//div[@class="pager"]/ul/li[last()]').text
-            total=int(total)
-            total = total
-        else:
-            raise TimeoutError
+
+    total=driver.find_element_by_xpath('//div[@class="pager"]/ul/li[last()]/a').get_attribute('data-page-index')
+    total=int(total)+1
+
     driver.quit()
     return total
 
@@ -486,6 +468,6 @@ if __name__=='__main__':
 
 
     conp=["postgres","since2015","192.168.3.171","qinghai","qinghai"]
-    # conp=["postgres","since2015","192.168.3.171","test","lch"]
 
-    work(conp=conp,num=20)
+
+    work(conp=conp)

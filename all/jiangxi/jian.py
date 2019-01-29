@@ -15,9 +15,9 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-from zhulong.util.etl import est_tbs, est_meta, est_html, gg_existed
+from lch.zhulong import est_tbs, est_meta, est_html, gg_existed
 
-from zhulong.util.conf import get_conp
+from lch.zhulong import get_conp
 # __conp=["postgres","since2015","192.168.3.171","hunan","hengyang"]
 
 

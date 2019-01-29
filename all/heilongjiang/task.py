@@ -1,9 +1,9 @@
 from lmf.dbv2 import db_command
-from zhulong.heilongjiang import daqing
-from zhulong.heilongjiang import hegang
-from zhulong.heilongjiang import heilongjiang
-from zhulong.heilongjiang import qiqihaer
-from zhulong.heilongjiang import yichun
+from lch.zhulong import daqing
+from lch.zhulong import hegang
+from lch.zhulong import heilongjiang
+from lch.zhulong import qiqihaer
+from lch.zhulong import yichun
 
 
 from os.path import join, dirname

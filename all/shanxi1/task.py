@@ -1,6 +1,6 @@
 from lmf.dbv2 import db_command
 
-from zhulong.shanxi1 import shanxi
+from lch.zhulong import shanxi
 
 
 from os.path import join, dirname

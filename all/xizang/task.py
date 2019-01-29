@@ -1,8 +1,8 @@
 from lmf.dbv2 import db_command
 
-from zhulong.xizang import xizang
-from zhulong.xizang import lasa
-from zhulong.xizang import rikaze
+from lch.zhulong import xizang
+from lch.zhulong import lasa
+from lch.zhulong import rikaze
 
 
 from os.path import join, dirname

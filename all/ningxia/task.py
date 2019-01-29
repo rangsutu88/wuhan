@@ -1,8 +1,8 @@
 from lmf.dbv2 import db_command
 
-from zhulong.ningxia import ningxia
-from zhulong.ningxia import yinchuan
-from zhulong.ningxia import guyuan
+from lch.zhulong import ningxia
+from lch.zhulong import yinchuan
+from lch.zhulong import guyuan
 
 
 from os.path import join, dirname

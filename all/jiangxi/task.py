@@ -1,23 +1,23 @@
 from lmf.dbv2 import db_command
 
-from zhulong.jiangxi import dexing
-from zhulong.jiangxi import fengcheng
-from zhulong.jiangxi import fuzhou
-from zhulong.jiangxi import ganzhou
-from zhulong.jiangxi import gaoan
-from zhulong.jiangxi import jian
-from zhulong.jiangxi import jiangxi
-from zhulong.jiangxi import jingdezhen
-from zhulong.jiangxi import jinggangshan
-from zhulong.jiangxi import lushan
-from zhulong.jiangxi import nanchang
-from zhulong.jiangxi import ruichang
-from zhulong.jiangxi import ruijin
-from zhulong.jiangxi import shangrao
-from zhulong.jiangxi import xinyu
-from zhulong.jiangxi import yichun
-from zhulong.jiangxi import yingtan
-from zhulong.jiangxi import zhangshu
+from lch.zhulong import dexing
+from lch.zhulong import fengcheng
+from lch.zhulong import fuzhou
+from lch.zhulong import ganzhou
+from lch.zhulong import gaoan
+from lch.zhulong import jian
+from lch.zhulong import jiangxi
+from lch.zhulong import jingdezhen
+from lch.zhulong import jinggangshan
+from lch.zhulong import lushan
+from lch.zhulong import nanchang
+from lch.zhulong import ruichang
+from lch.zhulong import ruijin
+from lch.zhulong import shangrao
+from lch.zhulong import xinyu
+from lch.zhulong import yichun
+from lch.zhulong import yingtan
+from lch.zhulong import zhangshu
 
 
 from os.path import join, dirname
@@ -25,7 +25,7 @@ from os.path import join, dirname
 
 import time
 
-from zhulong.util.conf import get_conp
+from lch.zhulong import get_conp
 
 
 # 1
@@ -191,7 +191,7 @@ def task_all():
 
 
 def create_schemas():
-    conp = get_conp('public')
+    conp = get_conp('jiangxi')
     arr = ["dexing","fengcheng",'fuzhou','ganzhou','gaoan','jian','jiangxi','jingdezhen',
            'jianggangshan','lushan','nanchang','ruichang','ruijin','shangrao',
             'xinyu','yichun','yingtan','zhangshu']

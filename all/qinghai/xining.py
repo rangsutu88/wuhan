@@ -24,9 +24,11 @@ from zhulong.util.etl import est_tbs, est_meta, est_html, est_gg, add_info
 # driver.minimize_window()
 # driver.get(url)
 
+
 _name_='xining'
 
 def f1(driver,num):
+
     locator = (By.XPATH, '//div[@class="right-span-content"]/table/tbody/tr[1]/td[2]/a')
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
     url = driver.current_url
@@ -35,18 +37,23 @@ def f1(driver,num):
 
     if int(cnum) != num:
         main_url = url.rsplit('=', maxsplit=1)[0]
-        val = driver.find_element_by_xpath('//div[@class="right-span-content"]/table/tbody/tr[1]/td[2]/a').text
+        val = driver.find_element_by_xpath('//div[@class="right-span-content"]/table/tbody/tr[1]/td[2]/a').get_attribute('href')[-30:]
 
         url = main_url + '=' + str(num)
         driver.get(url)
-
-        locator = (By.XPATH, '//div[@class="right-span-content"]/table/tbody/tr[1]/td[2]/a[not(contains(string(),"%s"))]' % val)
-        WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+        try:
+            locator = (By.XPATH, '//div[@class="right-span-content"]/table/tbody/tr[1]/td[2]/a[not(contains(@href,"%s"))]' % val)
+            WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
+        except:
+            driver.refresh()
+            locator = (
+            By.XPATH, '//div[@class="right-span-content"]/table/tbody/tr[1]/td[2]/a[not(contains(@href,"%s"))]' % val)
+            WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
 
     data = []
 
     html = driver.page_source
-    soup = BeautifulSoup(html, 'lxml')
+    soup = BeautifulSoup(html, 'html.parser')
     div = soup.find('div', class_='right-span-content').find('table')
     lis = div.find_all('tr')
 
@@ -74,8 +81,9 @@ def f2(driver):
     locator = (By.XPATH, '//div[@class="right-span-content"]/table/tbody/tr[1]/td[2]/a')
     WebDriverWait(driver, 10).until(EC.presence_of_element_located(locator))
 
-    page = driver.find_element_by_xpath('//td[@class="huifont"]').text
-    page = re.findall('/(\d+)', page)[0]
+    content=driver.page_source
+    page=re.findall('<td class="huifont">\d/(\d+?)</td>',content)[0]
+
     total=int(page)
     driver.quit()
     return total
@@ -101,7 +109,7 @@ def f3(driver, url):
 
     page = driver.page_source
 
-    soup = BeautifulSoup(page, 'lxml')
+    soup = BeautifulSoup(page, 'html.parser')
 
     div = soup.find('td', id="TDContent")
 
@@ -121,16 +129,15 @@ data=[
     ["zfcg_zhongbiao_diqu1_gg","http://www.xnggzy.gov.cn/xnweb/zfcg/013003/013003001/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": '市本级'}),f2],
     ["zfcg_liubiao_diqu1_gg","http://www.xnggzy.gov.cn/xnweb/zfcg/013004/013004001/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": '市本级'}),f2],
 
+    ["gcjs_zhaobiao_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/jsgc/012001/012001002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": ''}),f2],
+    ["gcjs_biangen_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/jsgc/012002/012002002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": ''}),f2],
+    ["gcjs_zhongbiao_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/jsgc/012003/012003002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": ''}),f2],
+    ["gcjs_liubiao_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/jsgc/012004/012004002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": ''}),f2],
 
-    ["gcjs_zhaobiao_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/jsgc/012001/012001002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": '区县'}),f2],
-    ["gcjs_biangen_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/jsgc/012002/012002002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": '区县'}),f2],
-    ["gcjs_zhongbiao_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/jsgc/012003/012003002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": '区县'}),f2],
-    ["gcjs_liubiao_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/jsgc/012004/012004002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": '区县'}),f2],
-
-    ["zfcg_zhaobiao_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/zfcg/013001/013001002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": '区县'}),f2],
-    ["zfcg_biangen_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/zfcg/013002/013002002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": '区县'}),f2],
-    ["zfcg_zhongbiao_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/zfcg/013003/013003002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": '区县'}),f2],
-    ["zfcg_liubiao_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/zfcg/013004/013004002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": '区县'}),f2],
+    ["zfcg_zhaobiao_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/zfcg/013001/013001002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": ''}),f2],
+    ["zfcg_biangen_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/zfcg/013002/013002002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": ''}),f2],
+    ["zfcg_zhongbiao_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/zfcg/013003/013003002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": ''}),f2],
+    ["zfcg_liubiao_diqu2_gg","http://www.xnggzy.gov.cn/xnweb/zfcg/013004/013004002/?Paging=1",[ "name", "href", "ggstart_time","info"],add_info(f1, {"diqu": ''}),f2],
 
 ]
 
@@ -143,4 +150,5 @@ if __name__=='__main__':
 
     conp=["postgres","since2015","192.168.3.171","qinghai","xining"]
 
-    work(conp=conp,num=10,pageloadstrategy='none')
+
+    work(conp=conp,pageloadstrategy='none')

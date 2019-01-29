@@ -1,13 +1,13 @@
 from lmf.dbv2 import db_command
-from zhulong.jilin import baicheng
-from zhulong.jilin import baishan
-from zhulong.jilin import changchun
-from zhulong.jilin import jilin
-from zhulong.jilin import jilinshi
-from zhulong.jilin import liaoyuan
-from zhulong.jilin import siping
-from zhulong.jilin import songyuan
-from zhulong.jilin import tonghua
+from lch.zhulong import baicheng
+from lch.zhulong import baishan
+from lch.zhulong import changchun
+from lch.zhulong import jilin
+from lch.zhulong import jilinshi
+from lch.zhulong import liaoyuan
+from lch.zhulong import siping
+from lch.zhulong import songyuan
+from lch.zhulong import tonghua
 
 from os.path import join, dirname
 

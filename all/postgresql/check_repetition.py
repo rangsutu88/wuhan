@@ -18,7 +18,7 @@ schemaname = cur.fetchall()
 # [('danyang',), ('yancheng',), ('wuxi',), ('nanjing',), ('zhenjiang',), ('jiangyin',), ('dongtai',), ('information_schema',), ('nantong',), ('taizhou',), ('pg_catalog',), ('changshu',)
 city_name = []
 for name in schemaname:
-    if name[0] +".py" in current_doculist:
+    if name[0] +'.py' in current_doculist:
         city_name.append(name[0])
 # print("city_lenth",len(city_name),city_name)
 

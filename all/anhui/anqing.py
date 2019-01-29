@@ -15,7 +15,7 @@ import sys
 import time
 
 import json
-from zhulong.util.etl import est_tbs,est_meta,est_html,gg_existed
+from lch.zhulong import est_tbs,est_meta,est_html,gg_existed
 
 
 
@@ -144,7 +144,7 @@ data=[
 ]
 
 def work(conp,**args):
-    # est_meta(conp,data=data,diqu="安徽省安庆市",**args)
+    est_meta(conp,data=data,diqu="安徽省安庆市",**args)
     est_html(conp,f=f3,**args)
 
 if __name__=='__main__':

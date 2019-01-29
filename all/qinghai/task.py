@@ -1,7 +1,7 @@
 from lmf.dbv2 import db_command
 
-from zhulong.qinghai import qinghai
-from zhulong.qinghai import xining
+from lch.zhulong import qinghai
+from lch.zhulong import xining
 
 
 from os.path import join, dirname

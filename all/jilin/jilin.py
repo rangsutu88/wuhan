@@ -1,3 +1,4 @@
+import random
 import time
 from os.path import join, dirname
 
@@ -16,7 +17,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import requests
 from collections import defaultdict
 import json
-
+from fake_useragent import UserAgent
 
 
 from zhulong.util.etl import est_tbs, est_meta, est_html, gg_existed
@@ -38,6 +39,8 @@ def f1(driver, num):
 
     main_url=driver.current_url
     url = re.sub('&page=(\d+?)&', '&page={}&'.format(num), main_url)
+
+
 
     area_codes = defaultdict(str)
     area_code = {"122201004232188615": "长春市",
@@ -73,29 +76,42 @@ def f1(driver, num):
 
     data_ = []
 
-    req = requests.get(url)
-    if req.status_code == 200:
-        response = req.text
-        datas = re.findall('{"title":.*?}', response)
-        for data in datas:
+    ua=UserAgent()
 
-            name = re.findall('"title":"(.*?)"', data)[0]
-            address = re.findall('"area":"(.*?)"', data)[0]
-            if address not in area_codes.keys():
-                area_codes[address]='吉林省'
-            address = area_codes[address]
-            ggstart_time = re.findall('"timestamp":"(.*?)"', data)[0]
-            href = re.findall('"docpuburl":"(.*?)"', data)[0]
-            if 'http' in href:
-                href = href
-            else:
-                href = 'http://www.jl.gov.cn' + href
 
-            tmp = [name, ggstart_time, href, address]
+    headers={
+        "User-Agent": ua.chrome
+    }
 
-            data_.append(tmp)
-    else:
+    time.sleep(random.random())
+    req = requests.get(url,headers=headers)
+    if req.status_code != 200:
+        print(req.status_code)
         raise ValueError
+
+    response = req.text
+
+    datas = re.findall('{"title":.*?"}', response)
+    for data in datas:
+
+        name = re.findall('"title":"(.*?)"', data)[0] if re.findall('"title":"(.*?)"', data) else 'null'
+        address = re.findall('"area":"(.*?)"', data)[0]
+        if address not in area_codes.keys():
+            area_codes[address]='吉林省'
+
+        address = area_codes[address]
+        ggstart_time = re.findall('"timestamp":"(.*?)"', data)[0]
+        href = re.findall('"docpuburl":"(.*?)"', data)[0]
+
+        if 'http' in href:
+            href = href
+        else:
+            href = 'http://www.jl.gov.cn' + href
+
+        tmp = [name, ggstart_time, href, address]
+
+        data_.append(tmp)
+
 
     df = pd.DataFrame(data=data_)
     df["info"] = None
@@ -148,7 +164,8 @@ def f3(driver, url):
 data = [
     ["gcjs_zhaobiao_gg","http://was.jl.gov.cn/was5/web/search?channelid=237687&page=1&prepage=17&searchword=gtitle%3C%3E%27%27%20and%20gtitle%3C%3E%27null%27%20and%20tType=%27%E5%B7%A5%E7%A8%8B%E5%BB%BA%E8%AE%BE%27%20%20%20and%20iType=%27%E6%8B%9B%E6%A0%87%E5%85%AC%E5%91%8A%27%20%20%20&callback&callback=result",["name","ggstart_time","href",'address',"info"],f1,f2],
     ["gcjs_biangen_gg","http://was.jl.gov.cn/was5/web/search?channelid=237687&page=1&prepage=17&searchword=gtitle%3C%3E%27%27%20and%20gtitle%3C%3E%27null%27%20and%20tType=%27%E5%B7%A5%E7%A8%8B%E5%BB%BA%E8%AE%BE%27%20%20%20and%20iType=%27%E5%8F%98%E6%9B%B4%E5%85%AC%E5%91%8A%E5%B7%A5%E7%A8%8B%27%20%20%20&callback&callback=result",["name","ggstart_time","href",'address',"info"],f1,f2],
-    ["gcjs_zhongbiaohx_gg","http://was.jl.gov.cn/was5/web/search?channelid=237687&page=1&prepage=17&searchword=gtitle%3C%3E%27%27%20and%20gtitle%3C%3E%27null%27%20and%20tType=%27%E6%94%BF%E5%BA%9C%E9%87%87%E8%B4%AD%27%20%20and%20iType=%27%E4%B8%AD%E6%A0%87%E5%85%AC%E5%91%8A%27%20%20&callback&callback=result",["name","ggstart_time","href",'address',"info"],f1,f2],
+    ["gcjs_zhongbiao_gg","http://was.jl.gov.cn/was5/web/search?channelid=237687&page=2&prepage=17&searchword=gtitle%3C%3E%27%27%20and%20gtitle%3C%3E%27null%27%20and%20tType=%27%E5%B7%A5%E7%A8%8B%E5%BB%BA%E8%AE%BE%27%20%20%20and%20iType=%27%E4%B8%AD%E6%A0%87%E7%BB%93%E6%9E%9C%E5%85%AC%E5%91%8A%27%20%20%20&callback&callback=result",["name","ggstart_time","href",'address',"info"],f1,f2],
+    ["gcjs_zhongbiaohx_gg","http://was.jl.gov.cn/was5/web/search?channelid=237687&page=2&prepage=17&searchword=gtitle%3C%3E%27%27%20and%20gtitle%3C%3E%27null%27%20and%20tType=%27%E5%B7%A5%E7%A8%8B%E5%BB%BA%E8%AE%BE%27%20%20%20and%20iType=%27%E4%B8%AD%E6%A0%87%E5%80%99%E9%80%89%E4%BA%BA%E5%85%AC%E7%A4%BA%27%20%20%20&callback&callback=result",["name","ggstart_time","href",'address',"info"],f1,f2],
 
     ["zfcg_zhaobiao_gg","http://was.jl.gov.cn/was5/web/search?channelid=237687&page=1&prepage=17&searchword=gtitle%3C%3E%27%27%20and%20gtitle%3C%3E%27null%27%20and%20tType=%27%E6%94%BF%E5%BA%9C%E9%87%87%E8%B4%AD%27%20and%20iType=%27%E9%87%87%E8%B4%AD%E5%85%AC%E5%91%8A%27%20&callback&callback=result",["name","ggstart_time","href",'address',"info"],f1,f2],
     ["zfcg_biangen_gg","http://was.jl.gov.cn/was5/web/search?channelid=237687&page=1&prepage=17&searchword=gtitle%3C%3E%27%27%20and%20gtitle%3C%3E%27null%27%20and%20tType=%27%E6%94%BF%E5%BA%9C%E9%87%87%E8%B4%AD%27%20and%20iType=%27%E5%8F%98%E6%9B%B4%E5%85%AC%E5%91%8A%27%20&callback&callback=result",["name","ggstart_time","href",'address',"info"],f1,f2],
@@ -164,4 +181,4 @@ def work(conp,**args):
 
 if __name__=='__main__':
 
-    work(conp=["postgres", "since2015", "192.168.3.171", "jilin", "jilin"],num=10)
+    work(conp=["postgres", "since2015", "192.168.3.171", "jilin", "jilin"])

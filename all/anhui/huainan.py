@@ -3,21 +3,14 @@ from os.path import dirname, join
 import pandas as pd
 import re
 
-from selenium import webdriver
 from bs4 import BeautifulSoup
-from lmf.dbv2 import db_write, db_command, db_query
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
-from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-import sys
 import time
 
-import json
-from zhulong.util.etl import est_tbs,est_meta,est_html,gg_existed
+from lch.zhulong import est_meta,est_html,gg_existed
 
 
 # driver=webdriver.Chrome()

@@ -17,7 +17,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import requests
 import json
 
-from zhulong.util.etl import est_tbs, est_meta, est_html, gg_existed, add_info
+from lch.zhulong import est_tbs, est_meta, est_html, gg_existed, add_info
 
 # __conp=["postgres","since2015","192.168.3.171","hunan","changsha"]
 

@@ -15,7 +15,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-from zhulong.util.etl import est_tbs, est_meta, est_html, est_gg
+from lch.zhulong import est_tbs, est_meta, est_html, est_gg
 
 sys.setrecursionlimit(2000)
 

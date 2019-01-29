@@ -15,7 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import requests
 import json
 
-from zhulong.util.etl import est_tbs, est_meta, est_html, est_gg
+from lch.zhulong import est_tbs, est_meta, est_html, est_gg
 
 
 # __conp=["postgres","since2015","192.168.3.171","hunan","changsha"]
@@ -161,4 +161,4 @@ if __name__=='__main__':
     # conp=["testor","zhulong","192.168.3.171","test","lch"]
     conp=["postgres","since2015","192.168.3.171","jiangxi","nanchang"]
 
-    work(conp=conp,headless=True,pageloadtimeout=80)
+    work(conp=conp,headless=False,pageloadtimeout=80)
